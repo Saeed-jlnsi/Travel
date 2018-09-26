@@ -1,7 +1,15 @@
 @import '../assets/css/bootstrap-grid-css/dist/css/bootstrap-grid';
 
 html {
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
     body {
-        box-sizing: border-box;
+        font-family: sans-serif;
+        
     }
 }

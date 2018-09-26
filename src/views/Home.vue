@@ -1,13 +1,9 @@
 <template>
     <div class="bootstrap-wrapper">
       <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
             <app-header></app-header>
             <app-body></app-body>
             <app-footer></app-footer>
-          </div>
-        </div>
       </div>
     </div>
 </template>
@@ -21,7 +17,9 @@ import Footer from '../components/Footer/Footer.vue'
 export default {
   name: 'Home',
   data() {
+    return {
 
+    }
   },
   components: {
     appHeader: Header,
@@ -32,15 +30,5 @@ export default {
 </script>
 
 <style lang="scss">
-
   @import './home';
-
-  html {
-
-
-    body {
-
-    }
-  }
-
 </style>
