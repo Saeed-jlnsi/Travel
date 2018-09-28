@@ -3,10 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-<<<<<<< HEAD
 import '@/assets/css/reset.scss'
-=======
->>>>>>> b5feaa9b65c472b1e8257f85ac40c1f9e35ee59d
 
 Vue.config.productionTip = false
 
