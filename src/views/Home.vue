@@ -2,7 +2,10 @@
     <div class="bootstrap-wrapper">
       <div class="container">
             <app-header></app-header>
+<<<<<<< HEAD
             
+=======
+>>>>>>> b5feaa9b65c472b1e8257f85ac40c1f9e35ee59d
             <app-body></app-body>
             <app-footer></app-footer>
       </div>
