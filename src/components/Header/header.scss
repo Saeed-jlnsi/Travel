@@ -1,24 +1,18 @@
 @import '../../assets/css/vars/vars';
 
 .header {
-<<<<<<< HEAD
+
     // margin-top: 40px;
     border-bottom: 1px solid #aaa;
     width:100%;
     .logo {
         float: left;
         line-height: 100px;
-=======
     // background-color: $color3;
     margin-top: 40px;
     .logo {
         float: left;
-<<<<<<< HEAD
-=======
 
-
->>>>>>> b5feaa9b65c472b1e8257f85ac40c1f9e35ee59d
->>>>>>> 167c68902bcceada3bfddc0fc9a38960c40747a5
         .logoIcon {
             background-color: orangered;
             border: 1px solid orangered;
@@ -32,27 +26,13 @@
             -moz-border-radius: 10px;
             -ms-border-radius: 10px;
             -o-border-radius: 10px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         }
+    }
+    
     }
     .navbar {
         float: right;
         line-height: 100px;
-=======
-}
->>>>>>> 167c68902bcceada3bfddc0fc9a38960c40747a5
-    }
-    }
-    .navbar {
-        float: right;
-
->>>>>>> b5feaa9b65c472b1e8257f85ac40c1f9e35ee59d
-        ul li {
-            display: inline-block;
-            float: left;
-            margin-left: 40px;
         }
     }
-}
+    
