@@ -1,15 +1,16 @@
-@import '../assets/css/bootstrap-grid-css/dist/css/bootstrap-grid';
 
 html {
 
     * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     }
-
     body {
         font-family: sans-serif;
-        
+        .content {
+            padding: 10% 0;
+            .heroText {
+                font-size: 3em;
+            }
+        }
     }
 }

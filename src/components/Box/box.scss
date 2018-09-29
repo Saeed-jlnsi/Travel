@@ -1,0 +1,27 @@
+
+.singleBox {
+    border: 2px solid #ddd;
+    padding: 30px 30px 15px 30px;
+    margin-right: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px #ddd;
+
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+
+    img {
+        height: 40px;
+        width: 40px;
+        margin: auto;
+        display: block;
+    }
+
+    p {
+        text-align: center;
+        font-size: 60%;
+        margin-top: 20px;
+    }
+}

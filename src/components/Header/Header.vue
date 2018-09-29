@@ -12,16 +12,16 @@
 </template>
 
 <script>
-import Menu from '@/components/menu/Menu'
+import Menu from '@/components/menu/Menu.vue'
 
 export default {
   data() {
     return {
       menu:[
-        'Home' ,
+        'home' ,
         'RS',
-        'Brazil',
-        'WorldWide'
+        'brazil',
+        'worldwide'
       ]
     }
   },

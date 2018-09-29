@@ -2,7 +2,10 @@
     <div class="bootstrap-wrapper">
       <div class="container">
             <app-header></app-header>
-            <app-body></app-body>
+            <div class="row" :class="$style.content">
+              <div :class="$style.heroText"><span style="color: grey">Your</span><br/>Travel map</div>
+            </div>
+            <app-box></app-box>
             <app-footer></app-footer>
       </div>
     </div>
@@ -10,9 +13,9 @@
 
 <script>
 
-import Header from '../components/Header/Header.vue'
-import Body from '../components/Body/Body.vue'
-import Footer from '../components/Footer/Footer.vue'
+import Header from '../components/Header/Header.vue';
+import Footer from '../components/Footer/Footer.vue';
+import Box from '../components/Box/Box.vue'
 
 export default {
   name: 'Home',
@@ -23,12 +26,12 @@ export default {
   },
   components: {
     appHeader: Header,
-    appBody: Body,
-    appFooter: Footer
+    appFooter: Footer,
+    appBox: Box
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" module>
   @import './home';
 </style>

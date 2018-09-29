@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import '@/assets/css/reset.scss'
+import '@/assets/css/bootstrap-grid-css/dist/css/bootstrap-grid.css'
+// import '@/assets/image/logo.png'
+
 
 Vue.config.productionTip = false
 

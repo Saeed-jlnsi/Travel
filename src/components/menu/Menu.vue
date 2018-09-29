@@ -15,7 +15,7 @@ export default {
     }
   },
   props: {
-    menu:[]
+    menu: []
   }
 }
 </script>
