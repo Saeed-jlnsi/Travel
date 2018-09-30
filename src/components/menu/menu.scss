@@ -10,5 +10,12 @@
         cursor: pointer;
         color: #444;
         font-size: 90%;
+
+        span:hover {
+            padding-bottom: 5px;
+            color: #888;
+            border-bottom: 3px solid orangered;
+            
+        }
     }
 }
