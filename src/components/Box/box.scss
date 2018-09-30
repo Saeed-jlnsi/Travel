@@ -12,18 +12,24 @@
         box-shadow: 0 0 20px #ddd;
         cursor: pointer;
         margin: auto;
-        border: 2px solid #ddd;
         border-radius: 8px;
         -webkit-border-radius: 8px;
         -moz-border-radius: 8px;
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
+
+        // &:before {
+        //     content: "";
+        //     background: linear-gradient($color3, $color4);
+        //     opacity: 0.5;
+        // }
     
         &:hover { 
             // SOME GRADIENTS COLOR!!!
             // background: linear-gradient(#eb77da, #53acc5);
             // background: linear-gradient(magenta, cyan);
-            background: linear-gradient($color3, $color4);
+            // background: linear-gradient($color3, $color4);
+            background: linear-gradient( #fbc2eb,#a6c1ee);
         }
     
         img {
