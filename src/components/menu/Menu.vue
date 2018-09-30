@@ -14,8 +14,10 @@ export default {
 
     }
   },
-  props: {
-    menu: []
+
+  props : {
+    menu: {}
+
   }
 }
 </script>
