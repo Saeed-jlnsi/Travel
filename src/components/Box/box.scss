@@ -25,23 +25,27 @@
         // }
     
         &:hover { 
-            // SOME GRADIENTS COLOR!!!
+            // SOME NICE GRADIENT COLORS !!!
             // background: linear-gradient(#eb77da, #53acc5);
             // background: linear-gradient(magenta, cyan);
             // background: linear-gradient($color3, $color4);
-            background: linear-gradient( #fbc2eb,#a6c1ee);
+
+            //THE HEX COLORS CODE OF THE CURRENT LINEAR GRADIENT
+            // background: linear-gradient(#FBC2EB,#A6C1EE);
+
+            background: linear-gradient( rgba(251,194,235, 0.6),rgba(166,193,238, 0.6));
         }
     
         img {
-            height: 60px;
-            width: 60px;
+            height: 100px;
+            width: 100px;
             margin: auto;
             display: block;
         }
     
         div {
             text-align: center;
-            font-size: 90%;
+            font-size: 14px;
             display: table-row;
         }
     }
