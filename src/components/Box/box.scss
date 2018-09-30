@@ -1,36 +1,42 @@
 @import '../../assets/css/vars/vars';
 
-.singleBox {
-    border: 2px solid #ddd;
-    padding: 30px 30px 15px 30px;
-    margin-right: 10px;
-    background-color: white;
-    box-shadow: 0 0 10px #ddd;
-    cursor: pointer;
-
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    
-    &:hover {
-        // background: linear-gradient(#eb77da, #53acc5);
-        // background: linear-gradient(magenta, cyan);
-        background: linear-gradient($color3, $color4);
-
-    }
-
-    img {
-        height: 40px;
-        width: 40px;
+.boxes {
+    margin-top:100px;
+    .singleBox {
+        display: table;
+        width: 250px;
+        height: 300px;
+        padding: 30px 30px 15px 30px;
+        margin-right: 10px;
+        background-color: white;
+        box-shadow: 0 0 20px #ddd;
+        cursor: pointer;
         margin: auto;
-        display: block;
-    }
-
-    p {
-        text-align: center;
-        font-size: 60%;
-        margin-top: 20px;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    
+        &:hover { 
+            // SOME GRADIENTS COLOR!!!
+            // background: linear-gradient(#eb77da, #53acc5);
+            // background: linear-gradient(magenta, cyan);
+            background: linear-gradient($color3, $color4);
+        }
+    
+        img {
+            height: 60px;
+            width: 60px;
+            margin: auto;
+            display: block;
+        }
+    
+        div {
+            text-align: center;
+            font-size: 90%;
+            display: table-row;
+        }
     }
 }
