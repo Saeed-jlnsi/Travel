@@ -1,3 +1,4 @@
+@import '../../assets/css/vars/vars';
 
 .singleBox {
     border: 2px solid #ddd;
@@ -5,12 +6,20 @@
     margin-right: 10px;
     background-color: white;
     box-shadow: 0 0 10px #ddd;
+    cursor: pointer;
 
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
+    
+    &:hover {
+        // background: linear-gradient(#eb77da, #53acc5);
+        // background: linear-gradient(magenta, cyan);
+        background: linear-gradient($color3, $color4);
+
+    }
 
     img {
         height: 40px;
