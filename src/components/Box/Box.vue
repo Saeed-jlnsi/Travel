@@ -1,9 +1,9 @@
 <template>
-    <div class="row">
+    <div class="row" :class="$style.boxes">
         <div v-for="(city, index) in cities" :key="index" :class="$style.singleBox">
             <img src="../../assets/image/logo.png" alt="City_Photo">
-            <p>{{city.cityName}}</p>
-            <p>travel now <span>></span></p>
+            <div>{{city.cityName}}</div>
+            <div>travel now <span>></span></div>
         </div>
     </div>
 </template>
