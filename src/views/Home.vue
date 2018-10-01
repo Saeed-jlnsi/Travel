@@ -2,7 +2,7 @@
     <div class="bootstrap-wrapper">
       <div class="container">
             <app-header></app-header>
-            <div class="row" :class="$style.heroText">
+            <div class="row">
               <div :class="$style.heroText"><span style="color: grey">Your</span><br/>Travel map</div>
             </div>
             <app-box></app-box>
