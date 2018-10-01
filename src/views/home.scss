@@ -6,10 +6,12 @@ html {
     body {
         font-family: Arial, Helvetica,sans-serif;
         font-size: 20px;
-        .heroText {
+        .content {
             margin-top:100px;
-            font-family: 'Andada', serif;
-            font-size: 3em;
+            .heroText {
+                font-family: 'Andada', serif;
+                font-size: 3em;
+            }
         }
     }
 }
