@@ -45,8 +45,14 @@
     
         div {
             text-align: center;
-            font-size: 14px;
+            font-size: 20px;
             display: table-row;
+            font-family: 'Andada', serif;
+        }
+
+        div:last-child {
+            font-size: 16px;
+            color: #666;
         }
     }
 }
