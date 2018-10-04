@@ -11,6 +11,11 @@ html {
             .heroText {
                 font-family: 'Andada', serif;
                 font-size: 3em;
+
+                @media screen {
+                    width: 576;
+                    
+                }
             }
         }
     }
