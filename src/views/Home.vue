@@ -3,7 +3,11 @@
       <div class="container">
             <app-header></app-header>
             <div class="row" :class="$style.content">
-              <div :class="$style.heroText"><span style="color: grey">Your</span><br/>Travel map</div>
+              
+              <div :class="$style.heroText"><span style="color: grey">Your</span><br/><span style="color:orangered">Travel</span><span style="color: grey;"> map </span><span style="color:orangered">to</span></div>
+              <div class="main-image float-right">
+                <img :src="image" alt="">
+              </div>
             </div>
             <app-box></app-box>
             <app-footer></app-footer>
@@ -21,7 +25,7 @@ export default {
   name: 'Home',
   data() {
     return {
-    
+      image:require('@/assets/image/main-image.png')
     }
   },
   components: {
