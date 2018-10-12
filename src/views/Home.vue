@@ -3,24 +3,22 @@
       <div class="container">
             <app-header></app-header>
             <div class="row" :class="$style.content">
-              
-              <div :class="$style.heroText">
-                <span style="color: grey">Your</span><br/>
-                <span style="color:orangered">Travel</span>
-                <span style="color: grey;"> map </span>
-                <span style="color:orangered">to</span><br/>
-                <span style="color:orangered; float:right;">KISH</span><br/>
-                <app-button></app-button>
-              </div>
-              
-              <div class="main-image float-right">
-                <img :src="image" alt="">
-              </div>
-            </div>
+                  <div :class="$style.heroText">
+                    <span style="color: grey">Your</span><br/>
+                    <span style="color:orangered">Travel</span>
+                    <span style="color: grey;"> map </span>
+                    <span style="color:orangered">to</span><br/>
+                    <span style="color:orangered; float:right;">KISH</span><br/>
+                    <app-button></app-button>
+                  </div>
+                  <div class="main-image float-right">
+                    <img :src="image" alt="">
+                  </div>
+            </div> 
             <app-box></app-box>
             <app-footer></app-footer>
       </div>
-    </div>
+      </div>
 </template>
 
 <script>
