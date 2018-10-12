@@ -2,7 +2,7 @@
   <div class="row" :class="$style.header">
     <div class="col-sm-2">
       <div :class="$style.logo">
-        <span :class="$style.logoIcon">GZH</span>
+        <span :class="$style.logoIcon">TTK</span>
       </div>
     </div>
     <div class="col-sm-10">
@@ -19,9 +19,8 @@ export default {
     return {
       menu:[
         'home' ,
-        'RS',
-        'brazil',
-        'worldwide'
+        'about KISH',
+        'contact us'
       ]
     }
   },

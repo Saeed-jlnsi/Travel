@@ -1,0 +1,14 @@
+@import '../../assets/css/vars/vars';
+
+
+.btn {
+    margin: 15px auto 0 auto;
+    width: 150px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 15px 0;
+    font-size: 30%;
+    color: white;
+    background-color: $color4;
+    float: right;
+}

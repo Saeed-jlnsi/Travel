@@ -1,4 +1,4 @@
 # www.traveltokish.ir
 
-> A new technical brand of tourist helping with focus on culture
+> A new website for travel & tourism, with the focus on culture.
 
