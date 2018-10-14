@@ -2,7 +2,8 @@
   <div class="row" :class="$style.header">
     <div class="col-sm-2">
       <div :class="$style.logo">
-        <span :class="$style.logoIcon">TTK</span>
+        <!-- <span :class="$style.logoIcon">TTK</span> -->
+        <img src="../../assets/image/LogoSample_ByTailorBrands (5).jpg" alt="" width="130px" height="130px">
       </div>
     </div>
     <div class="col-sm-10">

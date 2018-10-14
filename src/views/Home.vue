@@ -14,7 +14,16 @@
                   <div class="main-image float-right">
                     <img :src="image" alt="">
                   </div>
-            </div> 
+            </div>
+            <div :class="$style.gallery">
+              <div class="col-lg-7">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-3"></div>
+              </div>
+              <div class="col-lg-3">
+              </div>
+            </div>
             <app-box></app-box>
             <app-footer></app-footer>
       </div>
