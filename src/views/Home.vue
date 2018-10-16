@@ -12,7 +12,7 @@
                     <span style="color: grey;"> map </span>
                     <span style="color:orangered">to</span><br/> -->
                     <span style="color:orangered; float:right;">KISH</span><br/>
-                    <app-button>Let's Go!</app-button>
+                    <app-button :class="$style.btnStart">Let's Go!</app-button>
                   </div>
                   <div class="main-image float-right">
                     <img :src="image" alt="">
@@ -48,7 +48,7 @@
                       <textarea v-model="contactData.comment" :class="$style.textArea" name="body" id="" cols="30" rows="3">
                       </textarea>
                   </div>
-                  <app-button @click.native="submit" color="regular" :className="$style.confBtn">Send Message</app-button>
+                  <app-button @click.native="submit" color="regular" :class="$style.confBtn">Send</app-button>
               </div>
             </div>
             <!-- CONTACT FORM: END -->
