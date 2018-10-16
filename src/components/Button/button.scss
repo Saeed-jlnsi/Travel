@@ -7,8 +7,15 @@
     border: 1px solid transparent;
     border-radius: 30px;
     padding: 15px 0;
-    font-size: 30%;
+    font-size: 35%;
     color: white;
-    background-color: $color4;
+    background-color: $color5;
     float: right;
+    letter-spacing: 0px;
+
+    &:hover {
+        background-color: $color5-shade;
+        transition: background-color 0.5s;
+        cursor: pointer;
+    }
 }

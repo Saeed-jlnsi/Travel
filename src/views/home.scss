@@ -1,22 +1,21 @@
 
 html {
-    * {
-    box-sizing: border-box;
-    }
     body {
         font-family: Railway,sans-serif;
         font-size: 20px;
+
         .content {
-            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
             .main-image {
-                float: right;
+                width: 50%;
             }
             .heroText {
-                float: left;
+                width: 55%;
                 height: 100%;
                 margin-top: 170px;
-                margin-left: 30px;
-                margin-right: 50px;
                 font-family: 'Andada', serif;
                 font-size: 3em;
                 line-height: 120%;
@@ -26,6 +25,24 @@ html {
                     float: right;
                 }
             }
+        }
+
+        .contactForm {
+            width: 50%;
+            margin: 100px auto 0 auto;
+
+            label {
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 100px;
+                font-size: 110%;
+                padding: 5px 5px;
+            }
+
         }
     }
 }
