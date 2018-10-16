@@ -1,15 +1,16 @@
 <template>
     <div class="bootstrap-wrapper">
-      <div class="container">
+      <div class="fluid-container">
 
             <app-header></app-header>
 
             <div class="row" :class="$style.content">
                   <div :class="$style.heroText">
-                    <span style="color: grey">Your</span><br/>
+                    <span>Your <br><span>Travel </span>map <span>to</span></span>
+                    <!-- <span style="color: grey">Your</span><br/>
                     <span style="color:orangered">Travel</span>
                     <span style="color: grey;"> map </span>
-                    <span style="color:orangered">to</span><br/>
+                    <span style="color:orangered">to</span><br/> -->
                     <span style="color:orangered; float:right;">KISH</span><br/>
                     <app-button>Let's Go!</app-button>
                   </div>
@@ -22,31 +23,33 @@
 
             <!-- CONTACT FORM: START -->
             <div :class="$style.contactForm">
-              <div>
-                  <app-custom-input 
-                      label="Full Name" 
-                      :class="$style.name"
-                      v-model="contactData.name"
-                  ></app-custom-input>
+              <div :class="$style.contactUsInner">
+                  <div>
+                      <app-custom-input 
+                          label="Full Name" 
+                          :class="$style.name"
+                          v-model="contactData.name"
+                      ></app-custom-input>
+                  </div>
+                  <div>
+                      <app-custom-input 
+                          label="Email" 
+                          :class="$style.email"
+                          v-model="contactData.email"
+                      ></app-custom-input>
+                      <app-custom-input 
+                          label="Phone Number" 
+                          :class="$style.phone"
+                          v-model="contactData.phone"
+                      ></app-custom-input>
+                  </div>
+                  <div>
+                      <label for="body">Message Content</label>
+                      <textarea v-model="contactData.comment" :class="$style.textArea" name="body" id="" cols="30" rows="3">
+                      </textarea>
+                  </div>
+                  <app-button @click.native="submit" color="regular" :className="$style.confBtn">Send Message</app-button>
               </div>
-              <div>
-                  <app-custom-input 
-                      label="Email" 
-                      :class="$style.email"
-                      v-model="contactData.email"
-                  ></app-custom-input>
-                  <app-custom-input 
-                      label="Phone Number" 
-                      :class="$style.phone"
-                      v-model="contactData.phone"
-                  ></app-custom-input>
-              </div>
-              <div>
-                  <label for="body">Message Content</label>
-                  <textarea v-model="contactData.comment" :class="$style.textArea" name="body" id="" cols="30" rows="3">
-                  </textarea>
-              </div>
-              <app-button @click.native="submit" color="regular" :className="$style.confBtn">Send Message</app-button>
             </div>
             <!-- CONTACT FORM: END -->
 

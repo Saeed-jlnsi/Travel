@@ -18,5 +18,12 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  }
+  },
+  cssModules: {
+    localIdentName: '[name]__[local]___[hash:base64:5]',
+    minimize: true,
+    camelCase: 'dashes',
+    modules: true,
+    importLoaders: 3
+  },
 }
