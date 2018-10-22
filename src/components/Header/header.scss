@@ -3,8 +3,11 @@
 .header {
     max-width:1300px;
     justify-content: space-between;
+    height: 80px;
+    padding: 0 30px;
     width:100%;
-    margin: 0 auto !important;
+    display:flex;
+    margin: 0 auto;
     .logo {
         float: left;
         line-height: 100px;

@@ -1,25 +1,22 @@
 <template>
-    <div class="bootstrap-wrapper">
-      <div class="fluid-container">
-
+    <div>
+      <div>
             <app-header></app-header>
 
-            <div class="row" :class="$style.content">
+            <div :class="$style.content">
                   <div :class="$style.heroText">
                     <span>Your <br><span>Travel </span>map <span>to</span></span>
-                    <!-- <span style="color: grey">Your</span><br/>
-                    <span style="color:orangered">Travel</span>
-                    <span style="color: grey;"> map </span>
-                    <span style="color:orangered">to</span><br/> -->
                     <span style="color:orangered; float:right;">KISH</span><br/>
                     <app-button :class="$style.btnStart">Let's Go!</app-button>
                   </div>
-                  <div class="main-image float-right">
+                  <div class="$style.mainImage">
                     <img :src="image" alt="">
                   </div>
             </div>
 
-            <app-box></app-box>
+            <div :class="$style.boxContainer">
+              <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
+            </div>
 
             <!-- CONTACT FORM: START -->
             <div :class="$style.contactForm">
@@ -74,7 +71,12 @@ export default {
       image:require('@/assets/image/main-image.png'),
       contactData: {},
       label: '',
-      btnLabel: ''
+      btnLabel: '',
+      cities: [
+        {cityName: 'Montreal', imageLink:'../../assets/image/logo.png'},
+        {cityName: 'Berlin', imageLink:'../../assets/image/logo.png'},
+        {cityName: 'San Francisco', imageLink:'../../assets/image/logo.png'},
+      ]
     }
   },
   components: {
