@@ -12,7 +12,7 @@ html {
             justify-content: space-between;
 
             //Test
-            background-color: yellow;
+            // background-color: yellow;
 
             .main-image {
                 width: 50%;
@@ -36,16 +36,17 @@ html {
             }
         }
         .contactForm {
-            max-width:1300px;
+            // max-width:1300px;
             height: 100vh;
             margin:0 auto 0 !important;
+            background: linear-gradient(#FBC2EB,#A6C1EE);
 
             //Test
-            background-color: red;
+            // background-color: red;
 
             .contactUsInner {
                 margin: 0 auto !important;
-                padding-top: 150px;
+                padding-top: 100px;
                 width:50%;
                 label {
                     display: block;
