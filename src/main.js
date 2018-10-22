@@ -8,7 +8,7 @@ import '@/assets/css/bootstrap-grid-css/dist/css/bootstrap-grid.css'
 // import '@/assets/image/logo.png'
 
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true
 
 /* eslint-disable no-new */
 new Vue({

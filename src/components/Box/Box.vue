@@ -2,8 +2,8 @@
     <div :class="$style.box">
         <div :class="$style.innerBox">
             <img :src="image" alt="City_Photo">
-            <div>{{city.cityName}}</div>
-            <div>travel now <span>></span></div>
+            <span>{{city.cityName}}</span>
+            <span>Travel Now ></span>
         </div>
     </div>
 </template>
@@ -17,8 +17,9 @@
             }
         },
         created() {
-            // this.image = require(this.city.imageLink)
+            // let path = this.city.imageLink
             console.log(this.city)
+            this.image = require('@/assets/image/' + this.city.imageLink + '.jpg')
         },
         props: {
             city:{}

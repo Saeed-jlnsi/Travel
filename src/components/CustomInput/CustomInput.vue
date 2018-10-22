@@ -1,10 +1,18 @@
 <template>
-    <div :class="[$style.customInput,className]">
-        <label v-if="label" for="">{{label}}</label>
+    <div :class="$style.customInput">
+        <div v-if="label" for="" :class="$style.label">{{label}}</div>
         <div v-if="validation" :class="$style.validation">!</div>
         <div :class="$style.input">
-            <span v-if="icon" :class="icon"></span>
-            <input :name="name" :class="invalidClass" type="text" :placeholder="placeHolder" @input="onInput" :value="value" autocomplete="on">
+            <span v-if="icon" :class="$style.icon"></span>
+            <input 
+                :name="name" 
+                :class="invalidClass" 
+                type="text" 
+                :placeholder="placeHolder"
+                @input="onInput" 
+                :value="value" 
+                autocomplete="on"
+             >
         </div>
     </div>
 </template>

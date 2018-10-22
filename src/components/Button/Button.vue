@@ -1,8 +1,8 @@
 <template>
     <div >
-        <button :class="$style.btn">
+        <div :class="$style.btn">
             <slot>Button</slot>
-        </button>
+        </div>
     </div>
 </template>
 
