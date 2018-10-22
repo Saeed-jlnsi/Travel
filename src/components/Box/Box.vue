@@ -1,5 +1,5 @@
 <template>
-    <div class="row" :class="$style.box">
+    <div :class="$style.box">
         <div :class="$style.innerBox">
             <img :src="image" alt="City_Photo">
             <div>{{city.cityName}}</div>

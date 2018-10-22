@@ -48,11 +48,8 @@ html {
             justify-content: center;
             margin: 0 auto;
             .contactUsInner {
-                // margin: 0 auto !important;
-                // padding-top: 150px;
                 width:60%;
                 label {
-                    // display: block;
                     margin-bottom: 20px;
                 }
                 textarea {
@@ -63,10 +60,8 @@ html {
                 }
                 .confBtn button {
                     margin: 15px auto 0;
-                    // display: block;
                 }
             }
-            
         }
     }
 }
