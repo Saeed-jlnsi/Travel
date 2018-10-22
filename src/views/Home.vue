@@ -5,7 +5,7 @@
 
             <div :class="$style.content">
                   <div :class="$style.heroText">
-                    <span>Your <br><span>Travel </span>map <span>to</span></span>
+                    <span>Your <br><span>Travel </span>map <span>to...</span></span>
                     <span style="color:orangered; float:right;">KISH</span><br/>
                     <app-button :class="$style.btnStart">Let's Go!</app-button>
                   </div>
