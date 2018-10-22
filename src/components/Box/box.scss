@@ -1,39 +1,27 @@
 @import '../../assets/css/vars/vars';
 
-.boxes {
-    max-width:1300px;
+.box {
     width:100%;
-    height: 100vh;
-    margin:0 auto !important;
-
-    //Test
-    // background-color: green;
-
-    .singleBox {
-        // display: table;
-        width: 23%;
-        height: 350px;
+    .inner-box {
+        width: 100%;
+        height: 300px;
         padding: 30px 30px 15px 30px;
         margin-right: 10px;
         background-color: white;
         box-shadow: 0 0 20px #ddd;
         cursor: pointer;
         margin: auto;
-        // border: 3px dotted #fff;
-        border-radius: 5px;
-
+        border: 3px dotted #fff;
+        border-radius: 20px;
         &:hover { 
             // SOME NICE GRADIENT COLORS !!!
             // background: linear-gradient(#eb77da, #53acc5);
             // background: linear-gradient(magenta, cyan);
             // background: linear-gradient($color3, $color4);
-
             //THE HEX COLORS CODE OF THE CURRENT LINEAR GRADIENT
             // background: linear-gradient(#FBC2EB,#A6C1EE);
-
             background: linear-gradient( rgba(251,194,235, 0.6),rgba(166,193,238, 0.6));
         }
-    
         img {
             height: 75px;
             width: 100px;
@@ -41,14 +29,11 @@
             margin: auto;
             display: block;
         }
-    
         div {
             text-align: center;
-            display: table-row;
             font-family: 'Andada', serif;
             font-weight: 700;
         }
-
         div:last-child {
             font-size: 16px;
             color: #666;

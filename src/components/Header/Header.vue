@@ -1,12 +1,12 @@
 <template>
-  <div class="row" :class="$style.header">
-    <div class="col-sm-2">
+  <div :class="$style.header">
+    <div>
       <div :class="$style.logo">
         <!-- <span :class="$style.logoIcon">TTK</span> -->
         <img :src="imageLink" alt="travel to kish">
       </div>
     </div>
-    <div class="col-sm-10">
+    <div>
       <Menu :menu="menu"></Menu>
     </div>
   </div>
