@@ -20,15 +20,16 @@
 
             <!-- CONTACT FORM: START -->
             <div :class="$style.contactForm">
+              <div :class="$style.title">Contact US</div>
               <div :class="$style.contactUsInner">
-                  <div>
+                  
                       <app-custom-input 
-                          label="Full Name" 
+                          label="Full Name"
                           :class="$style.name"
                           v-model="contactData.name"
                       ></app-custom-input>
-                  </div>
-                  <div>
+                  
+                  
                       <app-custom-input 
                           label="Email" 
                           :class="$style.email"
@@ -39,12 +40,12 @@
                           :class="$style.phone"
                           v-model="contactData.phone"
                       ></app-custom-input>
-                  </div>
-                  <div>
-                      <label for="body">Message Content</label>
-                      <textarea v-model="contactData.comment" :class="$style.textArea" name="body" id="" cols="30" rows="3">
+                  
+                  
+                      <div :class="$style.textareaLabel">Message Content</div>
+                      <textarea v-model="contactData.comment" :class="$style.textArea" name="body" id="" cols="30" rows="8">
                       </textarea>
-                  </div>
+                  
                   <app-button @click.native="submit" color="regular" :class="$style.confBtn">Send</app-button>
               </div>
             </div>
@@ -57,6 +58,7 @@
 </template>
 
 <script>
+  
 
 import Header from '../components/Header/Header.vue';
 import Footer from '../components/Footer/Footer.vue';
@@ -73,9 +75,9 @@ export default {
       label: '',
       btnLabel: '',
       cities: [
-        {cityName: 'Montreal', imageLink:'../../assets/image/logo.png'},
-        {cityName: 'Berlin', imageLink:'../../assets/image/logo.png'},
-        {cityName: 'San Francisco', imageLink:'../../assets/image/logo.png'},
+        {cityName: 'Montreal', imageLink:'Greek-ship'},
+        {cityName: 'Berlin', imageLink:'Greek-ship'},
+        {cityName: 'San Francisco', imageLink:'Greek-ship'},
       ]
     }
   },
