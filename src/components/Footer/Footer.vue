@@ -10,11 +10,7 @@
                     </div>
                 </div>
                 <div :class="$style.socialMedia">
-                    <a href="#"><img :class="$style.socialMediaIcon" src="../../assets/image/facebook.svg"></a>
-                    <a href="#"><img :class="$style.socialMediaIcon" src="../../assets/image/instagram.svg"></a>
-                    <a href="#"><img :class="$style.socialMediaIcon" src="../../assets/image/telegram.svg"></a>
-                    <a href="#"><img :class="$style.socialMediaIcon" src="../../assets/image/twitter.svg"></a>
-                    <a href="#"><img :class="$style.socialMediaIcon" src="../../assets/image/linkedin.svg"></a>
+                    <router-link v-for="link in socialLinks" :key="link" to=""><img :class="$style.socialMediaIcon" :src="iconlink(link)"></router-link>
                 </div>
             </div>
     </div>
@@ -30,6 +26,18 @@ import Menu from '@/components/menu/Menu.vue';
                 'about KISH',
                 'contact us'
                 ],
+                socialLinks: [
+                    'facebook',
+                    'instagram',
+                    'telegram',
+                    'twitter',
+                    'linkedin'
+                ]
+            }
+        },
+        methods: {
+            iconlink(iconName) {
+                return require('@/assets/image/' + iconName + '.svg')
             }
         },
         components: {
