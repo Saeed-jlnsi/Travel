@@ -1,9 +1,21 @@
 
 html {
     font-family: Railway,sans-serif;
-    font-size: 20px;
+    font-size: 22px;
     body {
-          
+        
+        h1, h2 {
+
+        }
+
+        h1 {
+            font-size: 200%;
+        }
+
+        h2 {
+            font-size: 180%;
+        }
+
         .content {
             width:100%;
             display: flex;
@@ -34,6 +46,26 @@ html {
                 float: right;
             }
         }
+
+        .kishInfo {
+            margin: 300px auto;
+            line-height: 150%;
+            text-align: justify;
+
+            & > h2 {
+                margin-bottom: 70px;
+                text-align: center;
+                color: orangered;
+            }
+
+            & > p {
+                padding-bottom: 30px;
+                width: 60%;
+                text-align: justify;
+                margin: auto;
+            }
+        }
+
         .box-container {
             max-width: 1300px;
             width:100%;
