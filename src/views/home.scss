@@ -32,6 +32,12 @@ html {
             .btnStart {
                 margin: 15px auto 0 auto;
                 float: right;
+                & > div {
+                    background: orangered;
+                    // font-weight: bolder;
+                    font-size: 38px;
+                    letter-spacing: 2px;
+                }
             }
         }
         .box-container {

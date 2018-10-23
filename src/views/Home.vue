@@ -4,9 +4,9 @@
             <app-header></app-header>
             <div :class="$style.content">
                   <div :class="$style.heroText">
-                    <span>Your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> to </span></span>
-                    <span style="float:right;" :class="$style.orangered">KISH</span><br/>
-                    <app-button :class="$style.btnStart">Let's Go!</app-button>
+                    <span>your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> To </span></span>
+                    <!-- <span style="float:right;" :class="$style.orangered"></span><br/> -->
+                    <app-button :class="$style.btnStart">KISH</app-button>
                   </div>
                   <div class="$style.mainImage">
                     <img :src="image" alt="">
