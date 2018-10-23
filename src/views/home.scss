@@ -2,7 +2,8 @@
 html {
     font-family: Railway,sans-serif;
     font-size: 20px;
-    body {        
+    body {
+          
         .content {
             width:100%;
             display: flex;
@@ -21,7 +22,9 @@ html {
                 font-size: 3em;
                 line-height: 120%;
                 letter-spacing: 6px;
-
+                .orangered {
+                    color:orangered;
+                }      
                 & > span:last-child {
                     float: right;
                 }
