@@ -11,7 +11,7 @@
                 @input="onInput" 
                 :value="value" 
                 autocomplete="on"
-             >
+            >
         </div>
     </div>
 </template>
@@ -33,9 +33,9 @@
             }
         }    ,
         methods : {
-          onInput (e) {
-          this.$emit('input' ,e.target.value )
-          }
+            onInput (e) {
+                this.$emit('input' ,e.target.value )
+            }
 
         },
     }
