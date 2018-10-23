@@ -6,7 +6,6 @@
             <span v-if="icon" :class="$style.icon"></span>
             <input 
                 :name="name" 
-                :class="invalidClass" 
                 type="text" 
                 :placeholder="placeHolder"
                 @input="onInput" 
@@ -19,12 +18,26 @@
 
 <script>
     export default {
-        props: ['label'],
+        name: 'CustomInput',
+        props: {
+            label:{},
+            name:{},
+            placeHolder:{},
+            value:{},
+            name:{},
+            icon:{}
+        },
         data() {
             return {
-
+                validation:false
             }
-        }    
+        }    ,
+        methods : {
+          onInput (e) {
+          this.$emit('input' ,e.target.value )
+          }
+
+        },
     }
 </script>
 
