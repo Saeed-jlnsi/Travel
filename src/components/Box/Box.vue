@@ -18,7 +18,7 @@
         },
         created() {
             // let path = this.city.imageLink
-            console.log(this.city)
+            // console.log(this.city)
             this.image = require('@/assets/image/' + this.city.imageLink + '.jpg')
         },
         props: {

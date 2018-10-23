@@ -44,6 +44,11 @@ html {
             .btnStart {
                 margin: 15px auto 0 auto;
                 float: right;
+                & > div {
+                    background: orangered;
+                    font-size: 38px;
+                    letter-spacing: 3px;
+                }
             }
         }
 
