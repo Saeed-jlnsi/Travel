@@ -78,6 +78,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import Header from '../components/Header/Header.vue';
 import Footer from '../components/Footer/Footer.vue';
 import Box from '../components/Box/Box.vue'
@@ -121,6 +122,15 @@ export default {
     changePhone(e) {
      console.log('changePhone function', e)   
     },
+    submit() {
+      axios.post('http://localhost:8082/contact_handler.php', this.contactData)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    }
   }
 }
 </script>
