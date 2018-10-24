@@ -1,7 +1,7 @@
 <template>
-  <div class="row" :class="$style.menu">
+  <div :class="$style.menu">
         <ul>
-          <li v-for="(item,index) in menu" :key="index" class="hidden-xs-down"><span>{{item}}</span></li>
+          <li v-for="(item,index) in menu" :key="index"><span>{{item}}</span></li>
         </ul>
   </div>
 </template>

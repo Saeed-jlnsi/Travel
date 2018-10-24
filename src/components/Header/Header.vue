@@ -6,7 +6,7 @@
         <img :src="imageLink" alt="travel to kish">
       </div>
     </div>
-    <div>
+    <div :class="$style.navBar">
       <Menu :menu="menu"></Menu>
     </div>
   </div>
