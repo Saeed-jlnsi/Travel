@@ -15,7 +15,6 @@
     </div>
     <div :class="$style.kishInfo">
         <h2>Welcome to Kish Island</h2>
-          
           <p>
             Kish is Located on the north east of the Persian Gulf with a minimum distance of 17 km from the southern offshore of the mainland Iran,
             the Kish island with an area of 90 square kilometres is one of the most marvelous and most beautiful regions of the Persian Gulf and has attracted the attention of many tribes and nations since times immemorial. 
@@ -24,6 +23,9 @@
             Although very hot and humid in summer, it has got a pleasant weather from about November to March, with an annual average temperature of 27 degrees centigrade.
             Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water.
           </p>
+    </div>
+    <div :class="$style.draggableBoxes">
+      
     </div>
     <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
@@ -88,9 +90,9 @@ export default {
       label: '',
       btnLabel: '',
       cities: [
-        {cityName: 'Montreal', imageLink:'Greek-ship'},
-        {cityName: 'Berlin', imageLink:'Greek-ship'},
-        {cityName: 'San Francisco', imageLink:'Greek-ship'},
+        {cityName: 'Montreal', imageLink:'greek-ship'},
+        {cityName: 'Berlin', imageLink:'persian-gulf-beauties'},
+        {cityName: 'San Francisco', imageLink:'entertainment'},
       ]
     }
   },
