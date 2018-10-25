@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 require_once 'PHPMailer/src/PHPMailer.php';
 require_once 'PHPMailer/src/SMTP.php';
-require 'PHPMailer/src/Exception.php';
+require_once 'PHPMailer/src/Exception.php';
 
 // require ($_SERVER["DOCUMENT_ROOT"].'/PHPMailer/src/PHPMailer.php');
 // require ($_SERVER["DOCUMENT_ROOT"].'/PHPMailer/src/SMTP.php');
@@ -28,7 +28,7 @@ $mail->Username = 'info@traveltokish.ir';                // SMTP username
 $mail->Password = 'hamid97716868';                  // SMTP password
 // $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 
-$mail->setFrom('info@traveltokish.ir','Hamid Eslami');
+$mail->setFrom('info@traveltokish.ir');
 $mail->addAddress('heslami32@gmail.com');  // Add a recipient , Name is Optional
 
 $mail->IsHTML(true);                                  // Set email format to HTML
