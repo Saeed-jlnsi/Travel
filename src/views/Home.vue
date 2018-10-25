@@ -1,8 +1,10 @@
 <template>
   <div :class="$style.container">
+    <!-- HEADER -->
     <div :class="$style.homeHeader">
       <app-header></app-header>
     </div>
+    <!-- CONTENT -->
     <div :class="$style.content">
           <div :class="$style.heroText">
             <span>your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> To </span></span>
@@ -13,6 +15,7 @@
             <img :src="image" alt="">
           </div>
     </div>
+    <!-- KISH INFO -->
     <div :class="$style.kishInfo">
         <h2>Welcome to Kish Island</h2>
           <p>
@@ -24,13 +27,32 @@
             Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water.
           </p>
     </div>
-    <div :class="$style.draggableBoxes">
-      
+    <!-- SLIDER CATEGORY -->
+    <div :class="$style.sliderCategory">
+      <div :class="$style.sliderRow">
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+      </div>
+      <div :class="$style.sliderRow">
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+      </div>
+      <div :class="$style.sliderRow">
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+        <span>test</span>
+      </div>
     </div>
+    <!-- BOX -->
     <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
     </div>
-    <!-- CONTACT FORM: START -->
+    <!-- CONTACT FORM -->
     <div :class="$style.contactForm">
       <div :class="$style.title">Contact US</div>
       <div :class="$style.contactUsInner">
@@ -64,7 +86,7 @@
           <app-button @click.native="submit" color="regular" :class="$style.confBtn">Send</app-button>
       </div>
     </div>
-    <!-- CONTACT FORM: END -->
+    <!-- FOOTER -->
     <app-footer></app-footer>
   </div>
 </template>
