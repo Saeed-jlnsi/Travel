@@ -76,6 +76,24 @@ html {
                     word-spacing: 4px;
                 }
             }
+            .slider-category {
+                width: 70%;
+                margin: 100px auto;
+                padding: 30px;
+                .slider-row {
+                    width: 60%;
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 50px auto;
+                    padding: 20px 30px;
+                    box-shadow: 0 0 20px #ddd;
+                    border-radius: 40px;
+                    & > span {
+                        
+                    }
+                    
+                }
+            }
             .box-container {
                 max-width: 1300px;
                 width:100%;
