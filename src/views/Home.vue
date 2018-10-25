@@ -30,22 +30,22 @@
     <!-- SLIDER CATEGORY -->
     <div :class="$style.sliderCategory">
       <div :class="$style.sliderRow">
-        <span>test</span>
-        <span>test</span>
-        <span>test</span>
-        <span>test</span>
+        <span><img src="../assets/image/coast.jpg" alt=""></span>
+        <span><img src="../assets/image/sea.jpg" alt=""></span>
+        <span><img src="../assets/image/dolphins-show.jpg" alt=""></span>
+        <span><img src="../assets/image/dariush-hotel.jpg" alt=""></span>
       </div>
       <div :class="$style.sliderRow">
-        <span>test</span>
-        <span>test</span>
-        <span>test</span>
-        <span>test</span>
+        <span><img src="../assets/image/dariush-hotel.jpg" alt=""></span>
+        <span><img src="../assets/image/coast.jpg" alt=""></span>
+        <span><img src="../assets/image/sea.jpg" alt=""></span>
+        <span><img src="../assets/image/dolphins-show.jpg" alt=""></span>
       </div>
       <div :class="$style.sliderRow">
-        <span>test</span>
-        <span>test</span>
-        <span>test</span>
-        <span>test</span>
+        <span><img src="../assets/image/dolphins-show.jpg" alt=""></span>
+        <span><img src="../assets/image/dariush-hotel.jpg" alt=""></span>
+        <span><img src="../assets/image/coast.jpg" alt=""></span>
+        <span><img src="../assets/image/sea.jpg" alt=""></span>
       </div>
     </div>
     <!-- BOX -->

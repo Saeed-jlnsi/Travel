@@ -86,7 +86,13 @@ html {
                     box-shadow: 0 0 20px #ddd;
                     border-radius: 40px;
                     & > span {
-                        
+
+                        img {
+                                height: 100px;
+                                width: 100px;
+                                border: 1px solid transparent;
+                            border-radius: 50px;
+                        }
                     }
                     
                 }
