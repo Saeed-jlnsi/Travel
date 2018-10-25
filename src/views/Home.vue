@@ -11,7 +11,7 @@
             <!-- <span style="float:right;" :class="$style.orangered"></span><br/> -->
             <app-button :class="$style.btnStart">KISH</app-button>
           </div>
-          <div class="$style.mainImage">
+          <div :class="$style.mainImage">
             <img :src="image" alt="">
           </div>
     </div>

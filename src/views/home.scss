@@ -25,9 +25,6 @@ html {
                 padding: 0 30px;
                 max-width:1300px;
                 justify-content: space-around;
-                .main-image {
-                    width: 50%;
-                }
                 .heroText {
                     width: 55%;
                     height: 100%;
@@ -161,5 +158,29 @@ html {
                 }
             }
         }
+    }
+}
+@media only screen and (max-width:768px) {
+    .content {
+        flex-direction: column;
+    }
+    .box-container {
+        flex-direction: column;
+        & > div {
+            width:80% !important;
+            margin-bottom: 50px !important;
+            & > div {
+                height:auto !important;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .contactUsInner {
+        width:85% !important;
+    }
+    .main-image {
+        width:100% !important;
+        height:auto !important;
+        margin-left:0 !important;
     }
 }
