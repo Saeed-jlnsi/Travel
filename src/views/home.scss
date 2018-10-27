@@ -55,10 +55,12 @@ html {
                 padding: 30px 0 80px;
                 line-height: 150%;
                 text-align: justify;
-                background: #eee;
                 width:100%;
-                max-width:1100px;
-                border-radius: 40px;
+                background-image: linear-gradient( rgba(0,0,0,0.7),rgba(0, 0, 0, 0.7)), url(../assets/image/background.jpg);
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+                color: #eee;
                 & > h2 {
                     margin: 30px 0 60px;
                     text-align: center;
@@ -74,24 +76,38 @@ html {
                 }
             }
             .slider-category {
-                width: 70%;
+                width: 60%;
                 margin: 100px auto;
+                box-shadow: 0 0 20px #ddd;
+                border-radius: 10px;
                 padding: 30px;
+                .titleRow {
+                    display: block;
+                    margin: 20px;
+                    // color: orangered;
+                }
                 .slider-row {
-                    width: 60%;
+                    // width: 60%;
                     display: flex;
                     justify-content: space-around;
-                    margin: 50px auto;
+                    margin: 0 auto 50px auto;
                     padding: 20px 30px;
-                    box-shadow: 0 0 20px #ddd;
-                    border-radius: 40px;
+                    border-top: 2px solid #ddd;
+
+                    img {
+                        height: 40px;
+                        width: 40px;
+                        color: orangered;
+                        margin: auto;
+                    }
+                    
                     & > span {
 
                         img {
-                                height: 100px;
-                                width: 100px;
-                                border: 1px solid transparent;
-                            border-radius: 50px;
+                            height: 100px;
+                            width: 100px;
+                            border: 1px solid transparent;
+                            border-radius: 10px;
                         }
                     }
                     
