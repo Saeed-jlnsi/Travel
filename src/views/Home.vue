@@ -1,10 +1,8 @@
 <template>
   <div :class="$style.container">
-    <!-- HEADER -->
     <div :class="$style.homeHeader">
       <app-header></app-header>
     </div>
-    <!-- CONTENT -->
     <div :class="$style.content">
           <div :class="$style.heroText">
             <span>your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> To </span></span>
@@ -15,18 +13,20 @@
             <img :src="image" alt="">
           </div>
     </div>
-    <!-- KISH INFO -->
     <div :class="$style.kishInfo">
-        <h2>Welcome to Kish Island</h2>
+        <div :class="$style.kishInfoText">
+          <h2>Welcome to Kish Island</h2>
           <p>
             Kish is Located on the north east of the Persian Gulf with a minimum distance of 17 km from the southern offshore of the mainland Iran,
             the Kish island with an area of 90 square kilometres is one of the most marvelous and most beautiful regions of the Persian Gulf and has attracted the attention of many tribes and nations since times immemorial. 
             Oval in shape, the island is 15 km long and 8 km wide.
-            The island is largely flat, sandy and uncultivated, with a high point of 45 meters above sea level.
+            <!-- The island is largely flat, sandy and uncultivated, with a high point of 45 meters above sea level.
             Although very hot and humid in summer, it has got a pleasant weather from about November to March, with an annual average temperature of 27 degrees centigrade.
-            Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water.
+            Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water. -->
           </p>
+        </div>
     </div>
+<<<<<<< HEAD
     <!-- SLIDER CATEGORY -->
     <div :class="$style.sliderCategory">
       <span :class="$style.titleRow">Hotel</span>
@@ -56,12 +56,15 @@
         <span><img src="../assets/image/sea.jpg" alt=""></span>
         <img src="../assets/image/play-button-right.svg" alt="">
       </div>
+=======
+    <div :class="$style.draggableBoxes">
+      
+>>>>>>> bf349183b86635c55cb0f1ad48bef7993d05889f
     </div>
-    <!-- BOX -->
     <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
     </div>
-    <!-- CONTACT FORM -->
+    <!-- CONTACT FORM: START -->
     <div :class="$style.contactForm">
       <div :class="$style.title">Contact US</div>
       <div :class="$style.contactUsInner">
@@ -95,7 +98,7 @@
           <app-button @click.native="submit" color="regular" :class="$style.confBtn">Send</app-button>
       </div>
     </div>
-    <!-- FOOTER -->
+    <!-- CONTACT FORM: END -->
     <app-footer></app-footer>
   </div>
 </template>
