@@ -26,7 +26,6 @@
           </p>
         </div>
     </div>
-<<<<<<< HEAD
     <!-- SLIDER CATEGORY -->
     <div :class="$style.sliderCategory">
       <span :class="$style.titleRow">Hotel</span>
@@ -56,10 +55,6 @@
         <span><img src="../assets/image/sea.jpg" alt=""></span>
         <img src="../assets/image/play-button-right.svg" alt="">
       </div>
-=======
-    <div :class="$style.draggableBoxes">
-      
->>>>>>> bf349183b86635c55cb0f1ad48bef7993d05889f
     </div>
     <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
