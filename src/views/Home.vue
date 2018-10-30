@@ -18,7 +18,7 @@
       <div :class="$style.kishInfoContent">
         <div :class="$style.kishInfoImage">
         <img src="../assets/image/kish-info-background.jpg" alt="">
-        <img src="../assets/image/kish-info-background.jpg" alt="">
+        <img src="../assets/image/diving.jpg" alt="">
         </div>
         <div :class="$style.kishInfoText">
           <p>

@@ -61,6 +61,7 @@ html {
                 & > h2 {
                     text-align: center;
                     margin-bottom: 50px;
+                    color: orangered;
                 }
                 
                 .kishInfoContent {
@@ -71,15 +72,15 @@ html {
                     .kishInfoImage {
                         width: 50%;
                         & > img:first-of-type {
-                            width: 300px;
+                            width: 400px;
                             height: 300px;
                         }
                         & > img:last-of-type {
-                            width: 200px;
+                            width: 300px;
                             height: 200px;
                             position: absolute;
                             left: 250px;
-                            top: 50px;
+                            top: 150px;
                         }
                     }
                     
