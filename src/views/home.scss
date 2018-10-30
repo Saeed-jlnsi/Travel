@@ -57,6 +57,7 @@ html {
                 line-height: 150%;
                 text-align: justify;
                 width:100%;
+                max-width: 1300px;
 
                 & > h2 {
                     text-align: center;
@@ -68,14 +69,28 @@ html {
                     display: flex;
                     flex-direction: row;
                     position: relative;
-                    padding: 0 80px;
+                    min-height: 380px;
                     .kishInfoImage {
                         width: 50%;
-                        & > img:first-of-type {
+                        margin-top: 30px;
+
+                        & > img {
+                            border-radius: 10px;
+                        }
+                        & > .imageFirst {
                             width: 400px;
                             height: 300px;
                         }
-                        & > img:last-of-type {
+
+                        & > .imageSeconde {
+                            width: 300px;
+                            height: 200px;
+                            position: absolute;
+                            left: 330px;
+                            top: -20px;
+                        }
+
+                        & > .imageThird {
                             width: 300px;
                             height: 200px;
                             position: absolute;
@@ -105,6 +120,26 @@ html {
                             align-self: flex-end;                        
                         }
                     }
+                }
+
+                .kish-map {
+                    display: flex;
+                    justify-content: space-between;
+                    
+                    & > span:first-child {
+                        height: 100px;
+                        img {
+                            height: 150px;
+                            width: 150px;
+                        }
+
+                    }
+                    & > span:last-child {
+                        border-radius: 10px;
+                        overflow: hidden;
+                        height: 450px;
+                    }
+                
                 }
             }
             .box-container {

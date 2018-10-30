@@ -17,8 +17,9 @@
       <h2>Welcome to Kish Island</h2>
       <div :class="$style.kishInfoContent">
         <div :class="$style.kishInfoImage">
-        <img src="../assets/image/kish-info-background.jpg" alt="">
-        <img src="../assets/image/diving.jpg" alt="">
+        <img :class="$style.imageFirst" src="../assets/image/kish-info-background.jpg" alt="">
+        <img :class="$style.imageSeconde" src="../assets/image/hotel-dariush.jpg" alt="">
+        <img :class="$style.imageThird" src="../assets/image/diving.jpg" alt="">
         </div>
         <div :class="$style.kishInfoText">
           <p>
@@ -30,6 +31,10 @@
             Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water. -->
           </p>
         </div>
+      </div>
+      <div :class="$style.kishMap">
+        <span><img src="../assets/image/location-icon.png" alt=""></span>
+        <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96327.89987818028!2d53.90945930833464!3d26.54581455704053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e50a9147e298609%3A0x625dad11bc3932e2!2sKish+Island!5e0!3m2!1sen!2s!4v1540906756481" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span>
       </div>
     </div>
     <div :class="$style.draggableBoxes">
