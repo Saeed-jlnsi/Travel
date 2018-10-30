@@ -14,8 +14,13 @@
           </div>
     </div>
     <div :class="$style.kishInfo">
+      <h2>Welcome to Kish Island</h2>
+      <div :class="$style.kishInfoContent">
+        <div :class="$style.kishInfoImage">
+        <img src="../assets/image/kish-info-background.jpg" alt="">
+        <img src="../assets/image/kish-info-background.jpg" alt="">
+        </div>
         <div :class="$style.kishInfoText">
-          <h2>Welcome to Kish Island</h2>
           <p>
             Kish is Located on the north east of the Persian Gulf with a minimum distance of 17 km from the southern offshore of the mainland Iran,
             the Kish island with an area of 90 square kilometres is one of the most marvelous and most beautiful regions of the Persian Gulf and has attracted the attention of many tribes and nations since times immemorial. 
@@ -25,6 +30,7 @@
             Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water. -->
           </p>
         </div>
+      </div>
     </div>
     <div :class="$style.draggableBoxes">
       

@@ -57,37 +57,52 @@ html {
                 line-height: 150%;
                 text-align: justify;
                 width:100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                // max-width:1100px;
-                // border-radius: 40px;
-                // background-image: linear-gradient( rgba(0,0,0,0.6),rgba(0, 0, 0, 0.6)), url(../assets/image/background.jpg);
-                // background-size: cover;
-                // background-position: center;
-                // background-attachment: fixed;
-                // height: 100vh;
-                
-                .kishInfoText {
-                    display: flex;
-                    flex-direction: column;
 
-                    & > h2 {
-                        margin: 30px 0 60px;
-                        text-align: center;
-                        color: orangered;
-                        height: 100%;
-                        
-                    }
-                    & > p {
-                        padding-bottom: 30px;
+                & > h2 {
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+                
+                .kishInfoContent {
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    padding: 0 80px;
+                    .kishInfoImage {
                         width: 50%;
-                        text-align: justify;
-                        line-height: 30px;
-                        margin: 80px;
-                        margin-bottom: 0;
-                        word-spacing: 4px;
-                        align-self: flex-end;                        
+                        & > img:first-of-type {
+                            width: 300px;
+                            height: 300px;
+                        }
+                        & > img:last-of-type {
+                            width: 200px;
+                            height: 200px;
+                            position: absolute;
+                            left: 250px;
+                            top: 50px;
+                        }
+                    }
+                    
+                    .kishInfoText {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+    
+                        & > h2 {
+                            margin: 30px 0 60px;
+                            text-align: center;
+                            color: orangered;
+                            height: 100%;
+                            
+                        }
+                        & > p {
+                            padding-bottom: 30px;
+                            text-align: justify;
+                            line-height: 30px;
+                            margin: auto 0;
+                            word-spacing: 4px;
+                            align-self: flex-end;                        
+                        }
                     }
                 }
             }
