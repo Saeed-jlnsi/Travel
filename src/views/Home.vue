@@ -17,7 +17,7 @@
       <h2>Welcome to Kish Island</h2>
       <div :class="$style.kishInfoContent">
         <div :class="$style.kishInfoImage">
-        <img :class="$style.imageFirst" src="../assets/image/kish-info-background.jpg" alt="">
+        <img :class="$style.imageFirst" src="../assets/image/greek-ship.jpg" alt="">
         <img :class="$style.imageSeconde" src="../assets/image/hotel-dariush.jpg" alt="">
         <img :class="$style.imageThird" src="../assets/image/diving.jpg" alt="">
         </div>
