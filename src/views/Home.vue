@@ -26,14 +26,18 @@
             Kish is Located on the north east of the Persian Gulf with a minimum distance of 17 km from the southern offshore of the mainland Iran,
             the Kish island with an area of 90 square kilometres is one of the most marvelous and most beautiful regions of the Persian Gulf and has attracted the attention of many tribes and nations since times immemorial. 
             Oval in shape, the island is 15 km long and 8 km wide.
-            <!-- The island is largely flat, sandy and uncultivated, with a high point of 45 meters above sea level.
-            Although very hot and humid in summer, it has got a pleasant weather from about November to March, with an annual average temperature of 27 degrees centigrade.
-            Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water. -->
           </p>
         </div>
       </div>
       <div :class="$style.kishMap">
-        <span><img src="../assets/image/location-icon.png" alt=""></span>
+        <div :class="$style.kishMapInfo">
+          <span><img src="../assets/image/location-icon.png" alt=""></span>
+          <p>
+            The island is largely flat, sandy and uncultivated, with a high point of 45 meters above sea level.
+            Although very hot and humid in summer, it has got a pleasant weather from about November to March, with an annual average temperature of 27 degrees centigrade.
+            Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only free port, and its sweet water.
+          </p>
+        </div>
         <span><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96327.89987818028!2d53.90945930833464!3d26.54581455704053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e50a9147e298609%3A0x625dad11bc3932e2!2sKish+Island!5e0!3m2!1sen!2s!4v1540906756481" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span>
       </div>
     </div>
