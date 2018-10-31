@@ -6,6 +6,8 @@ html {
     body {
         height: 100%;
         color: #333;
+        display: flex;
+        justify-content: center;
         h1 {
             font-size: 200%;
         }
@@ -91,7 +93,7 @@ html {
                 }
             }
             .slider-category {
-                width: 60%;
+                width: 50%;
                 margin: 100px auto;
                 box-shadow: 0 0 20px #ddd;
                 border-radius: 10px;
@@ -102,12 +104,18 @@ html {
                     // color: orangered;
                 }
                 .slider-row {
-                    // width: 60%;
+                    min-width: 100%;
+                    min-height: 100px;
                     display: flex;
-                    justify-content: space-around;
-                    margin: 0 auto 50px auto;
-                    padding: 20px 30px;
+                    // margin: 0 auto 50px auto;
+                    // padding: 20px 30px;
                     border-top: 2px solid #ddd;
+                    overflow-x: auto;
+                    overflow-y: hidden;
+
+                    // &::-webkit-scrollbar {
+                    //     display: none;
+                    // }
 
                     img {
                         height: 40px;
@@ -116,12 +124,14 @@ html {
                         margin: auto;
                     }
                     
-                    & > span {
-                        margin-right: 20px;
+                    & > div {
+                        // margin: 0 5px;
+                        min-width: 100px;
+                        justify-content: space-between;
                         img {
                             height: 100px;
                             width: 100px;
-                            border: 1px solid transparent;
+                            // border: 1px solid transparent;
                             border-radius: 10px;
                         }
                     }

@@ -30,30 +30,57 @@
     <div :class="$style.sliderCategory">
       <span :class="$style.titleRow">Hotel</span>
       <div :class="$style.sliderRow">
-        <img src="../assets/image/play-button-left.svg" alt="">
-        <span><img src="../assets/image/coast.jpg" alt=""></span>
-        <span><img src="../assets/image/sea.jpg" alt=""></span>
-        <span><img src="../assets/image/dolphins-show.jpg" alt=""></span>
-        <span><img src="../assets/image/dariush-hotel.jpg" alt=""></span>
-        <img src="../assets/image/play-button-right.svg" alt="">
+        <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        
+        <!-- <img src="../assets/image/play-button-right.svg" alt=""> -->
       </div>
+      <!-- SEPARATOR -->
+      
       <span :class="$style.titleRow">Entertainment</span>
       <div :class="$style.sliderRow">
-        <img src="../assets/image/play-button-left.svg" alt="">
-        <span><img src="../assets/image/dariush-hotel.jpg" alt=""></span>
-        <span><img src="../assets/image/coast.jpg" alt=""></span>
-        <span><img src="../assets/image/sea.jpg" alt=""></span>
-        <span><img src="../assets/image/dolphins-show.jpg" alt=""></span>
-        <img src="../assets/image/play-button-right.svg" alt="">
+        <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <!-- <img src="../assets/image/play-button-right.svg" alt=""> -->
       </div>
       <span :class="$style.titleRow">Locations</span>
       <div :class="$style.sliderRow">
-        <img src="../assets/image/play-button-left.svg" alt="">
-        <span><img src="../assets/image/dolphins-show.jpg" alt=""></span>
-        <span><img src="../assets/image/dariush-hotel.jpg" alt=""></span>
-        <span><img src="../assets/image/coast.jpg" alt=""></span>
-        <span><img src="../assets/image/sea.jpg" alt=""></span>
-        <img src="../assets/image/play-button-right.svg" alt="">
+        <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <div><img src="../assets/image/coast.jpg" alt=""></div>
+        <div><img src="../assets/image/sea.jpg" alt=""></div>
+        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
+        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
+        <!-- <img src="../assets/image/play-button-right.svg" alt=""> -->
       </div>
     </div>
     <div :class="$style.boxContainer">
