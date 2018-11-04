@@ -22,8 +22,8 @@
             
         }
         .social-media {
-            // float: right;
-            
+            display: flex;
+            justify-content: space-between;
             & > a {
                 margin-left: 15px;
                 .social-media-icon {
@@ -32,10 +32,34 @@
                     
                 }
             }
+            & > a:first-of-type {
+                margin: 0;
+            }
         }
-        .copyRight {
+        .copy-right {
             font-size: 16px;
             color: #999;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        .inner-footer {
+            flex-direction: column-reverse;
+            
+            .footer-info {
+
+                .footerLinks {
+                    height: 30px;
+                }
+                .copy-right {
+                    text-align: center;
+                }
+            }
         }
     }
 }

@@ -222,6 +222,11 @@ html {
 @media only screen and (max-width:768px) {
     .content {
         flex-direction: column;
+        .main-image {
+            width:100% !important;
+            height:auto !important;
+            margin-left:0 !important;
+        }
     }
     .kish-info {
         width: 80% !important;
@@ -262,11 +267,6 @@ html {
     }
     .contact-us-inner {
         width:85% !important;
-    }
-    .main-image {
-        width:100% !important;
-        height:auto !important;
-        margin-left:0 !important;
     }
 
 }

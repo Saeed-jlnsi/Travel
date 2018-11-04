@@ -2,12 +2,18 @@
 
 .menu {
 
-    ul li {
-        display: inline-block;
-        float: left;
-        margin-right: 40px;
-        cursor: pointer;
-        font-family: sans-serif;
-        font-size: 18px;
-    }
+    ul {
+        & > li {
+            display: inline-block;
+            float: left;
+            margin-right: 40px;
+            cursor: pointer;
+            font-family: sans-serif;
+            font-size: 18px;
+        }
+
+        & > li:last-of-type {
+            margin: 0;
+        }
+    }   
 }
