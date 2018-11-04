@@ -2,7 +2,7 @@
 html {
     height: 100%;
     body {
-        font-family: Railway,sans-serif;
+        font-family: 'Railway',sans-serif;
         font-size: 22px;
         height: 100%;
         color: #333;
@@ -235,18 +235,17 @@ html {
             .kish-info-text {
                 width: 100% !important;
                 margin: 50px auto 0 auto;
-    
-                & > p {
-
-                }
             }
         }
         .kish-map {
             flex-direction: column-reverse;
             .kish-map-info {
                 width: 100% !important;
-                margin: 100px auto 0 auto;
-                margin-top: 100px !important;
+                margin: 100px auto 0 auto !important;
+            }
+
+            & > span iframe {
+                width: 100% !important;
             }
         }
     }
