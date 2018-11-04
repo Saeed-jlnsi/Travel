@@ -1,9 +1,9 @@
 
 html {
-    font-family: Railway,sans-serif;
-    font-size: 22px;
     height: 100%;
     body {
+        font-family: Railway,sans-serif;
+        font-size: 22px;
         height: 100%;
         color: #333;
         h1 {
@@ -50,7 +50,7 @@ html {
                     }
                 }
             }
-            .kishInfo {
+            .kish-info {
                 margin: 100px auto;
                 padding: 30px 0 80px;
                 line-height: 150%;
@@ -64,32 +64,31 @@ html {
                     color: orangered;
                 }
                 
-                .kishInfoContent {
+                .kish-info-content {
                     display: flex;
-                    flex-direction: row;
                     position: relative;
                     min-height: 380px;
-                    .kishInfoImage {
+                    .kish-info-image {
                         width: 50%;
                         margin-top: 30px;
 
                         & > img {
                             border-radius: 10px;
                         }
-                        & > .imageFirst {
+                        & > .image-first {
                             width: 400px;
                             height: 300px;
                         }
 
-                        & > .imageSeconde {
+                        & > .image-seconde {
                             width: 300px;
                             height: 200px;
                             position: absolute;
-                            left: 330px;
+                            left: 273px;
                             top: -20px;
                         }
 
-                        & > .imageThird {
+                        & > .image-third {
                             width: 300px;
                             height: 200px;
                             position: absolute;
@@ -98,7 +97,7 @@ html {
                         }
                     }
                     
-                    .kishInfoText {
+                    .kish-info-text {
                         display: flex;
                         flex-direction: column;
                         width: 50%;
@@ -117,7 +116,6 @@ html {
                             margin: auto 0;
                             // word-spacing: 4px;
                             align-self: flex-end;  
-                            width: 90%;                      
                         }
                     }
                 }
@@ -125,19 +123,20 @@ html {
                 .kish-map {
                     display: flex;
                     justify-content: space-between;
+                    margin-top: 50px;
                     
-                        div.kishMapInfo {
+                        .kish-map-info {
                         height: 100%;
                         width: 50%;
+                        position: relative;
+                        margin-top: 80px;
                         img {
                             height: 80px;
                             width: 80px;
+                            position: absolute;
+                            left: -35px;
+                            top: -80px;
                         }
-                        
-                        & > p {
-                            width: 90%;
-                            margin-left: 35px;
-                        }    
                     }
                     & > span {
                         border-radius: 10px;
@@ -157,7 +156,7 @@ html {
                     width:27%;
                 }
             }
-            .contactForm {
+            .contact-form {
                 width: 100%;
                 //THE PADDING BOTTOM ==> 200px IS FOR KEEPING THE FOOTER AT THE BOTTOM OF THE PAGE
                 padding: 20px 20px 200px 20px;
@@ -174,7 +173,7 @@ html {
                     color:orangered;
                     margin: 30px 0;
                 }
-                .contactUsInner {
+                .contact-us-inner {
                     margin-bottom: 100px;
                     max-width: 600px;
                     width:60%;
@@ -205,7 +204,7 @@ html {
                             border-color:orangered;
                         }
                     }
-                    .confBtn div {
+                    .conf-btn div {
                         width:100%;
                         margin: 15px auto 0;
             
@@ -224,6 +223,33 @@ html {
     .content {
         flex-direction: column;
     }
+    .kish-info {
+        width: 80% !important;
+        margin: 100px auto 0 auto;
+        .kish-info-content {
+            flex-direction: column;
+    
+            .kish-info-image {
+                width: 100% !important;
+            }
+            .kish-info-text {
+                width: 100% !important;
+                margin: 50px auto 0 auto;
+    
+                & > p {
+
+                }
+            }
+        }
+        .kish-map {
+            flex-direction: column-reverse;
+            .kish-map-info {
+                width: 100% !important;
+                margin: 100px auto 0 auto;
+                margin-top: 100px !important;
+            }
+        }
+    }
     .box-container {
         flex-direction: column;
         & > div {
@@ -235,7 +261,7 @@ html {
             }
         }
     }
-    .contactUsInner {
+    .contact-us-inner {
         width:85% !important;
     }
     .main-image {
@@ -243,4 +269,5 @@ html {
         height:auto !important;
         margin-left:0 !important;
     }
+
 }
