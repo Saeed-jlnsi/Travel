@@ -91,58 +91,16 @@ html {
                 }
             }
             .slider-category {
-                width: 50%;
-                margin: 100px auto;
+                // width: 70%;
+                margin: 50px auto;
                 box-shadow: 0 0 20px #ddd;
                 border-radius: 10px;
-                padding: 30px;
-                .titleRow {
-                    display: block;
-                    margin: 20px;
-                    // color: orangered;
-                }
+                // padding: 20px;
+                overflow: hidden;
                 .slider-row {
                     min-width: 100%;
                     min-height: 100px;
                     display: flex;
-                    // margin: 0 auto 50px auto;
-                    // padding: 20px 30px;
-                    border-top: 2px solid #ddd;
-                    overflow-x: auto;
-                    overflow-y: hidden;
-
-                    // &::-webkit-scrollbar {
-                    //     display: none;
-                    // }
-
-                    img {
-                        height: 40px;
-                        width: 40px;
-                        color: orangered;
-                        margin: auto;
-                    }
-                    
-                    & > div {
-                        // margin: 0 5px;
-                        min-width: 100px;
-                        justify-content: space-between;
-                        img {
-                            height: 100px;
-                            width: 100px;
-                            // border: 1px solid transparent;
-                            border-radius: 10px;
-                        }
-                    }
-                    & > p {
-                        padding-bottom: 30px;
-                        width: 50%;
-                        text-align: justify;
-                        line-height: 30px;
-                        margin: 80px;
-                        margin-bottom: 0;
-                        word-spacing: 4px;
-                        align-self: flex-end;                        
-                    }
                 }
             }
             .box-container {

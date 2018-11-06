@@ -26,66 +26,22 @@
           </p>
         </div>
     </div>
+
     <!-- SLIDER CATEGORY -->
     <div :class="$style.sliderCategory">
-      <span :class="$style.titleRow">Hotel</span>
-      <div :class="$style.sliderRow">
-        <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        
-        <!-- <img src="../assets/image/play-button-right.svg" alt=""> -->
-      </div>
-      <!-- SEPARATOR -->
-      
-      <span :class="$style.titleRow">Entertainment</span>
-      <div :class="$style.sliderRow">
-        <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <!-- <img src="../assets/image/play-button-right.svg" alt=""> -->
-      </div>
-      <span :class="$style.titleRow">Locations</span>
-      <div :class="$style.sliderRow">
-        <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <div><img src="../assets/image/coast.jpg" alt=""></div>
-        <div><img src="../assets/image/sea.jpg" alt=""></div>
-        <div><img src="../assets/image/dolphins-show.jpg" alt=""></div>
-        <div><img src="../assets/image/dariush-hotel.jpg" alt=""></div>
-        <!-- <img src="../assets/image/play-button-right.svg" alt=""> -->
-      </div>
+        <div :class="$style.sliderRow" v-for="(category,index) in categories" 
+            :key="index">
+          <app-slider
+            :category="category"
+            ></app-slider>
+        </div>
     </div>
+
+    <!-- BOXES -->
     <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
     </div>
+
     <!-- CONTACT FORM: START -->
     <div :class="$style.contactForm">
       <div :class="$style.title">Contact US</div>
@@ -132,6 +88,7 @@ import Footer from '../components/Footer/Footer.vue';
 import Box from '../components/Box/Box.vue'
 import Button from '../components/Button/Button.vue';
 import CustomInput from '../components/CustomInput/CustomInput.vue';
+import Slider from '../components/Slider/Slider.vue';
 
 export default {
   name: 'Home',
@@ -150,6 +107,11 @@ export default {
         {cityName: 'Montreal', imageLink:'greek-ship'},
         {cityName: 'Berlin', imageLink:'persian-gulf-beauties'},
         {cityName: 'San Francisco', imageLink:'entertainment'},
+      ],
+      categories: [
+        'Hotels',
+        'Entertainments',
+        'Locations'
       ]
     }
   },
@@ -158,7 +120,8 @@ export default {
     appFooter: Footer,
     appBox: Box,
     appButton: Button,
-    appCustomInput : CustomInput
+    appCustomInput : CustomInput,
+    appSlider : Slider
   },
   methods :{
     changeName(e) {

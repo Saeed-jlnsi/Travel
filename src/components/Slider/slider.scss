@@ -1,0 +1,37 @@
+
+
+
+.slider-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    // &::-webkit-scrollbar {
+    //     display: none;
+    // }
+
+    .title-row {
+        display: block;
+        margin: 20px;
+    }
+    .scroller-wrapper {
+        display:flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+
+        & > div {
+            width: 100%;
+            height: 200px;
+            margin: 10px 10px;
+            background-color: #eee;
+            border-radius: 10px;
+            
+            img {
+                height: 150px;
+                width: 300px;
+                border-radius: 10px 10px 0 0;
+            }
+        }
+    }
+}
