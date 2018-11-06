@@ -5,6 +5,10 @@ import App from './App'
 import router from './router'
 import '@/assets/css/reset.scss'
 import '@/assets/css/bootstrap-grid-css/dist/css/bootstrap-grid.css'
+import VueDragscroll from 'vue-dragscroll'
+
+Vue.use(VueDragscroll)
+
 // import '@/assets/image/logo.png'
 
 

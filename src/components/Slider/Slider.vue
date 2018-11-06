@@ -2,7 +2,7 @@
     <div :class="$style.sliderInner">
         <span :class="$style.titleRow">{{ category }}</span>
         <!-- <img src="../assets/image/play-button-left.svg" alt=""> -->
-        <div :class="$style.scrollerWrapper">
+        <div :class="$style.scrollerWrapper" v-dragscroll>
             <div><img src="../../assets/image/coast.jpg" alt=""></div>
             <div><img src="../../assets/image/sea.jpg" alt=""></div>
             <div><img src="../../assets/image/dolphins-show.jpg" alt=""></div>
