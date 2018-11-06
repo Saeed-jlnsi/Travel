@@ -15,7 +15,7 @@
             width:80px;
             height:80px;
         }
-        .logoIcon {
+        .logo-icon {
             width: 50px;
             height: 50px;
             background-color: orangered;
@@ -28,7 +28,7 @@
         }    
     }
 
-    .navBar {
+    .nav-bar {
         float: right;
         line-height: 100px;
         ul li {
@@ -40,10 +40,20 @@
             }
         }
     }
+    .nav-icon {
+        display: none; 
+    }
 }
 @media only screen and (max-width:768px) {
-    .navBar {
+    .nav-bar {
         display:none;
+    }
+    .nav-icon {
+        display: block !important;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin: auto 0;
     }
 }
     

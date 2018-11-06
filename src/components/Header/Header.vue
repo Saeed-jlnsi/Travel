@@ -2,12 +2,14 @@
   <div :class="$style.header">
     <div>
       <div :class="$style.logo">
-        <!-- <span :class="$style.logoIcon">TTK</span> -->
         <img :src="imageLink" alt="travel to kish">
       </div>
     </div>
     <div :class="$style.navBar">
       <Menu :menu="menu"></Menu>
+    </div>
+    <div :class="$style.navIcon">
+      <img src="../../assets/image/phone-nav.svg" alt="">
     </div>
   </div>
 </template>
