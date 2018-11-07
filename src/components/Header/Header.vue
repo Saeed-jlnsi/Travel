@@ -8,9 +8,9 @@
     <div :class="$style.navBar">
       <Menu :menu="menu"></Menu>
     </div>
-    <div :class="$style.navIcon">
+    <!-- <div :class="$style.navIcon">
       <img src="../../assets/image/phone-nav.svg" alt="">
-    </div>
+    </div> -->
   </div>
 </template>
 
