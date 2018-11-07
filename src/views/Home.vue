@@ -68,7 +68,10 @@
                   @input="changeEmail($event)"
                   :class="$style.email"
                   v-model="contactData.email"
+                  v-validate="'required|email'"
+                  
               ></app-custom-input>
+              <span :class="$style.validationMessage" v-show="errors.has('email')">{{ errors.first('email') }}</span>
               <app-custom-input 
                   name="phone"
                   placeHolder="phone ..."

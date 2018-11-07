@@ -177,6 +177,17 @@ html {
                     margin-bottom: 100px;
                     max-width: 600px;
                     width:60%;
+
+                    .validation-message {
+                        width: 100%;
+                        background-color: lighten(#d43f3a, 15%);
+                        border-color: lighten(#d43f3a, 10%);
+                        color: darken(#d43f3a, 15%);                        
+                        border-radius: 5px;
+                        font-size: 16px;
+                        padding: 10px;
+
+                    }
                     .name ,
                     .email,
                     .phone {
