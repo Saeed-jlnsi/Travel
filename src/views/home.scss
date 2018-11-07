@@ -232,11 +232,6 @@ html {
 }
 
 
-@media only screen and (max-width:480px) {
-
-
-}
-
 @media only screen and (max-width:768px) {
     .home-header {
         margin-bottom: 0 !important;
@@ -259,9 +254,10 @@ html {
     }
     .kish-info {
         width: 100% !important;
-        padding: 15px !important;
+        padding: 25px !important;
         // margin: 0  15px 50px !important;
         h2 {
+            margin-bottom: 30px !important;
         }
         .kish-info-content {
             flex-direction: column !important;
@@ -315,15 +311,5 @@ html {
     .contact-us-inner {
         width:85% !important;
     }
-
-}
-
-@media only screen and (max-width:1024px) {
-
-
-}
-
-@media only screen and (max-width:1200px) {
-
 
 }
