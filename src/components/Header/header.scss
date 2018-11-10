@@ -39,21 +39,37 @@
                 
             }
         }
-    }
-    .nav-icon {
-        display: none; 
+    } 
+
+    .mobile-nav-icon {
+        display: none;
     }
 }
+
 @media only screen and (max-width:768px) {
     .nav-bar {
         display:none;
     }
-    .nav-icon {
+    .mobile-nav-icon {
         display: block !important;
         position: relative;
         height: 35px;
         width: 35px;
         margin: auto 0;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            & > li {
+
+            }
+        }
     }
 }
-    
+

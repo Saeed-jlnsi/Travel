@@ -5,11 +5,16 @@
         <img :src="imageLink" alt="travel to kish">
       </div>
     </div>
-    <div :class="$style.navBar">
-      <Menu :menu="menu"></Menu>
-    </div>
-    <div :class="$style.navIcon">
-      <img src="../../assets/image/phone-nav.svg" alt="">
+    <div :class="$style.navigation">
+      <div :class="$style.navBar">
+        <Menu :menu="menu"></Menu>
+      </div>
+      <div :class="$style.mobileNavIcon" v-on:click.prevent="isMenuOpened = !isMenuOpened">
+        <img src="../../assets/image/phone-nav.svg" alt="">
+      </div>
+      <div :class="$style.mobileNav" v-if="isMenuOpened">
+          <Menu :menu="menu"></Menu>
+      </div>
     </div>
   </div>
 </template>
@@ -25,7 +30,9 @@ export default {
         'about KISH',
         'contact us'
       ],
-      imageLink: require('@/assets/image/logo.png')
+      imageLink: require('@/assets/image/logo.png'),
+      isMenuOpened: false
+
     }
   },
   components : {

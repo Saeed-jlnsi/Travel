@@ -3,9 +3,8 @@
 .menu {
 
     ul {
+        display: flex;
         & > li {
-            display: inline-block;
-            float: left;
             margin-right: 40px;
             cursor: pointer;
             font-family: sans-serif;
