@@ -7,7 +7,7 @@
           <div :class="$style.heroText">
             <span>your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> To </span></span>
             <!-- <span style="float:right;" :class="$style.orangered"></span><br/> -->
-            <app-button :class="$style.btnStart">KISH</app-button>
+            <app-button :class="$style.btnStart">Kish</app-button>
           </div>
           <div :class="$style.mainImage">
             <img :src="image" alt="">
