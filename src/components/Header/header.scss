@@ -2,10 +2,10 @@
 
 .header {
     max-width:1300px;
+    width:100%;
     justify-content: space-between;
     height: 80px;
     padding: 0 30px;
-    width:100%;
     display:flex;
     margin: 0 auto;
     .logo {
@@ -31,12 +31,16 @@
     .nav-bar {
         float: right;
         line-height: 100px;
-        ul li {
-            span:hover {
-                padding-bottom: 5px;
-                color: #888;
-                border-bottom: 2px solid orangered;
-                
+        width: 35%;
+        ul  {
+            display:flex;
+            justify-content: space-around;
+            li {
+                span:hover {
+                    padding-bottom: 5px;
+                    color: #888;
+                    border-bottom: 2px solid orangered;
+                }
             }
         }
     } 
