@@ -6,6 +6,9 @@ import router from './router'
 import '@/assets/css/reset.scss'
 import '@/assets/css/bootstrap-grid-css/dist/css/bootstrap-grid.css'
 // import '@/assets/image/logo.png'
+import VeeValidate from 'vee-validate'
+
+Vue.use(VeeValidate)
 
 
 Vue.config.productionTip = true

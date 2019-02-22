@@ -1,7 +1,7 @@
 <template>
-  <div class="row" :class="$style.menu">
+  <div :class="$style.menu">
         <ul>
-          <li v-for="(item,index) in menu" :key="index" class="hidden-xs-down"><span>{{item}}</span></li>
+          <li v-for="(item,index) in menu" :key="index"><span>{{item}}</span></li>
         </ul>
   </div>
 </template>
@@ -22,7 +22,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" module>
   @import './menu.scss';
 </style>

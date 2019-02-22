@@ -1,103 +1,315 @@
 
 html {
-    font-family: Railway,sans-serif;
-    font-size: 20px;
+    height: 100%;
     body {
-          
-        .content {
-            width:100%;
-            display: flex;
-            margin:0 auto 40px;
-            padding: 0 30px;
-            max-width:1300px;
-            justify-content: space-around;
-            .main-image {
-                width: 50%;
-            }
-            .heroText {
-                width: 55%;
-                height: 100%;
-                margin-top: 170px;
-                font-family: 'Andada', serif;
-                font-size: 3em;
-                line-height: 120%;
-                letter-spacing: 6px;
-                .orangered {
-                    color:orangered;
-                }      
-                & > span:last-child {
-                    float: right;
-                }
-            }
-            .btnStart {
-                margin: 15px auto 0 auto;
-                float: right;
-            }
+        font-family: 'Railway',sans-serif;
+        font-size: 22px;
+        height: 100%;
+        color: #333;
+        h1 {
+            font-size: 200%;
         }
-        .box-container {
-            max-width: 1300px;
-            width:100%;
-            margin:0 auto 50px;
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            & > div {
-                width:27%;
-            }
+        h2 {
+            font-size: 180%;
         }
-        .contactForm {
-            width: 100%;
-            padding: 20px;
-            background: #eee;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            .title {
-                font-size: 48px;
-                color:orangered;
-                margin: 30px 0;
-                font-weight: bold;
-                // display:flex;
-            }
-            .contactUsInner {
-                margin-bottom: 100px;
-                max-width: 600px;
-                width:60%;
-                .name ,
-                .email,
-                .phone {
-                    width:100%;
-                    margin: 20px 0;
+        .container {
+                min-height:100%;
+                position:relative;
+                .home-header {
+                    margin-bottom: 30px;
                 }
-                .textarea-label {
-                    margin-bottom: 12px;
-                    color:grey;
-                }
-                textarea {
-                    width:100%;
-                    padding:15px 20px;
-                    border:none;
-                    outline:none;
-                    border-radius: 8px  8px 0 0 ;
-                    border-bottom: 2px solid gray;
-                    font-size: 20px;
-                    color:gray;
-                    &:hover,
-                    &:focus {
-                        border-color:orangered;
+            .content {
+                width:100%;
+                display: flex;
+                margin:0 auto 40px;
+                padding: 0 30px;
+                max-width:1300px;
+                justify-content: space-around;
+                .heroText {
+                    width: 55%;
+                    height: 100%;
+                    margin-top: 170px;
+                    font-family: 'Andada', serif;
+                    font-size: 3em;
+                    line-height: 120%;
+                    letter-spacing: 6px;
+                    .orangered {
+                        color:orangered;
+                    }      
+                    & > span:last-child {
+                        float: right;
                     }
                 }
-                .confBtn div {
-                    width:100%;
-                    margin: 15px auto 0;
-                    background-color: orangered;
-                    padding: 15px 20px;
-                    &:hover {
-                        background: lighten(rgb(255, 99, 26),0.1)
+                .btnStart {
+                    margin: 15px auto 0 auto;
+                    float: right;
+                    & > div {
+                        background: orangered;
+                        font-size: 38px;
+                        letter-spacing: 3px;
+                    }
+                }
+            }
+            .kish-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 50px auto 100px;
+                line-height: 150%;
+                text-align: justify;
+                width:100%;
+                max-width: 1300px;
+
+                & > h2 {
+                    text-align: center;
+                    margin-bottom: 100px;
+                    line-height: 50px;
+                    color: orangered;
+                }
+                
+                .kish-info-content {
+                    display: flex;
+                    position: relative;
+                    min-height: 380px;
+                    .kish-info-image {
+                        width: 50%;
+                        margin-top: 30px;
+
+                        & > img {
+                            border-radius: 10px;
+                        }
+                        & > .image-first {
+                            width: 400px;
+                            height: 300px;
+                        }
+
+                        & > .image-seconde {
+                            width: 300px;
+                            height: 200px;
+                            position: absolute;
+                            left: 273px;
+                            top: -20px;
+                        }
+
+                        & > .image-third {
+                            width: 300px;
+                            height: 200px;
+                            position: absolute;
+                            left: 250px;
+                            top: 150px;
+                        }
+                    }
+                    
+                    .kish-info-text {
+                        display: flex;
+                        flex-direction: column;
+                        width: 50%;
+    
+                        & > h2 {
+                            margin: 30px 0 60px;
+                            text-align: center;
+                            color: orangered;
+                            height: 100%;
+                            
+                        }
+                        & > p {
+                            padding-bottom: 30px;
+                            text-align: justify;
+                            line-height: 30px;
+                            margin: auto 0;
+                            align-self: flex-end;  
+                        }
+                    }
+                }
+
+                .kish-map {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-top: 50px;
+                    & > span {
+                        margin-bottom: 20px;
+                        img {
+                            width:70px;
+                        }
+                    }
+                    .kish-map-main {
+                        display: flex;
+                        justify-content: space-between;
+                    
+                    }
+                    .kish-map-info {
+                        width: 50%;
+                        margin-right:30px;
+                    }
+                    
+                }
+            }
+            .box-container {
+                max-width: 1300px;
+                width:100%;
+                margin:0 auto 50px;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                & > div {
+                    width:27%;
+                }
+            }
+            .contact-form {
+                width: 100%;
+                //THE PADDING BOTTOM ==> 200px IS FOR KEEPING THE FOOTER AT THE BOTTOM OF THE PAGE
+                padding: 20px 20px 200px 20px;
+                // background: #eee;
+                background: linear-gradient( rgba(251,194,235, 0.5),rgba(166,193,238, 0.5));
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: #eee;
+                .title {
+                    font-size: 48px;
+        
+                    color:orangered;
+                    margin: 30px 0;
+                }
+                .contact-us-inner {
+                    margin-bottom: 100px;
+                    max-width: 600px;
+                    width:60%;
+
+                    .validation-message {
+                        width: 100%;
+                        background-color: lighten(#d43f3a, 15%);
+                        border-color: lighten(#d43f3a, 10%);
+                        color: darken(#d43f3a, 15%);                        
+                        border-radius: 5px;
+                        font-size: 16px;
+                        padding: 10px;
+
+                    }
+                    .name ,
+                    .email,
+                    .phone {
+                        width:100%;
+                        margin: 20px 0;
+                    }
+                    .textarea-label {
+                        margin-bottom: 12px;
+            
+                        color:grey;
+                    }
+                    textarea {
+                        width:100%;
+                        padding:15px 20px;
+                        border:none;
+                        outline:none;
+                        border-radius: 8px  8px 0 0 ;
+                        border-bottom: 2px solid gray;
+                        font-size: 20px;
+            
+                        color:gray;
+                        &:hover,
+                        &:focus {
+                
+                            border-color:orangered;
+                        }
+                    }
+                    .conf-btn div {
+                        width:100%;
+                        margin: 15px auto 0;
+            
+                        background-color: orangered;
+                        padding: 15px 20px;
+                        &:hover {
+                            background: lighten(rgb(255, 99, 26),0.1)
+                        }
                     }
                 }
             }
         }
     }
+}
+
+
+@media only screen and (max-width:768px) {
+    .home-header {
+        margin-bottom: 0 !important;
+    }
+    .content {
+        flex-direction: column;
+        padding: 10px !important;
+        .heroText {
+            margin-top: 40px !important;
+            font-size: 48px !important;
+            margin-left: 20px !important;
+        }
+        .main-image {
+            img {
+                width:100% !important;
+                height:auto !important;
+            }
+            margin-left:0 !important;
+        }
+    }
+    .kish-info {
+        width: 100% !important;
+        padding: 25px !important;
+        // margin: 0  15px 50px !important;
+        h2 {
+            margin-bottom: 30px !important;
+        }
+        .kish-info-content {
+            flex-direction: column !important;
+    
+            .kish-info-image {
+                width: 100% !important;
+                & >  img {
+                    width:100% !important;
+                    height:auto !important;
+                    position: static !important;
+                }
+                
+            }
+            .kish-info-text {
+                width: 100% !important;
+                margin: 50px auto 0 auto;
+            }
+        }
+        .kish-map {
+            flex-direction: column;
+            .kish-map-info {
+                width: 100% !important;
+                margin: 100px auto 0 auto !important;
+            }
+            .kish-map-main {
+                flex-direction: column;
+                .kish-map-info {
+                    margin-top:20px !important;
+                }
+                & > div:last-of-type {
+                    margin-top: 40px;
+                    iframe {
+                        width:100%;
+                    }
+                }
+            }
+
+        }
+    }
+    .box-container {
+        flex-direction: column;
+        & > div {
+            width:80% !important;
+            margin-bottom: 50px !important;
+            & > div {
+                height:auto !important;
+                padding-bottom: 30px;
+            }
+        }
+    }
+    .contact-us-inner {
+        width:85% !important;
+    }
+
 }
