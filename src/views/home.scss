@@ -45,6 +45,7 @@ html {
                     float: right;
                     & > div {
                         background: orangered;
+                        box-shadow: 0 0 10px #ddd;
                         font-size: 38px;
                         letter-spacing: 3px;
                     }
