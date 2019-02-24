@@ -230,9 +230,9 @@ html {
                     .conf-btn div {
                         width:100%;
                         margin: 15px auto 0;
-            
                         background-color: orangered;
                         padding: 15px 20px;
+                        font-weight: 600;
                         &:hover {
                             background: lighten(rgb(255, 99, 26),0.1)
                         }
