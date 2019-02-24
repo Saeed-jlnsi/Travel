@@ -54,7 +54,7 @@
 
     <!-- CONTACT FORM: START -->
     <div :class="$style.contactForm">
-      <div :class="$style.title">Contact US</div>
+      <div :class="$style.title"><h2>Contact US</h2></div>
       <div :class="$style.contactUsInner">
               <app-custom-input 
                   name="name"
@@ -140,6 +140,11 @@ export default {
       axios.post('http://localhost:8082/contact_handler.php', this.contactData)
       .then(function (response) {
         console.log(response);
+        // if(response.status == 200) {
+        //     console.log('Horrrraaaa');
+        // }else {
+        //   console.log('Sry Saeed');
+        // }
       })
       .catch(function (error) {
         console.log(error);
