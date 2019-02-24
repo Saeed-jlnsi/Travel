@@ -45,7 +45,7 @@ html {
                     float: right;
                     & > div {
                         background: orangered;
-                        box-shadow: 0 0 10px #ddd;
+                        box-shadow: 0 0 10px #bbb;
                         font-size: 38px;
                         letter-spacing: 3px;
                     }
@@ -77,7 +77,7 @@ html {
                         margin-top: 30px;
 
                         & > img {
-                            border-radius: 10px;
+                            // border-radius: 10px;
                         }
                         & > .image-first {
                             width: 400px;
@@ -127,7 +127,7 @@ html {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
-                    margin-top: 50px;
+                    // margin-top: 50px;
                     & > span {
                         margin-bottom: 20px;
                         img {
@@ -137,11 +137,20 @@ html {
                     .kish-map-main {
                         display: flex;
                         justify-content: space-between;
+                        align-items: center;
                     
                     }
                     .kish-map-info {
+                        background:url('../assets/image/location-icon.png');
+                        background-position: center;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                         width: 50%;
                         margin-right:30px;
+
+                        & > p {
+                            background: rgba(255,255,255,.4);
+                        }
                     }
                     
                 }

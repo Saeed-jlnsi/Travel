@@ -30,7 +30,7 @@
         </div>
       </div>
       <div :class="$style.kishMap">
-        <span><img src="../assets/image/location-icon.png" alt=""></span>
+        <!-- <span><img src="../assets/image/location-icon.png" alt=""></span> -->
         <div :class="$style.kishMapMain">
           <div :class="$style.kishMapInfo">
             <p>
