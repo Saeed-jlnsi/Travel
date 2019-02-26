@@ -45,12 +45,13 @@
         </div>
       </div>
     </div>
-    <div :class="$style.draggableBoxes">
+    <!-- <div :class="$style.draggableBoxes">
       
-    </div>
-    <div :class="$style.boxContainer">
+    </div> -->
+    <!-- <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
-    </div>
+    </div> -->
+
     <!-- CONTACT FORM: START -->
     <div :class="$style.contactForm">
       <div :class="$style.title">Contact US</div>
