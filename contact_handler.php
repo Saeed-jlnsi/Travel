@@ -58,13 +58,13 @@ var_dump($data);
 
 
 
-$mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->CharSet = 'UTF-8';
+// $mail = new PHPMailer();
+// $mail->IsSMTP();
+// $mail->CharSet = 'UTF-8';
 
-$mail->Host       = "mail.traveltokish.ir"; // SMTP server example
-$mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
-$mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->Port       = 587;                    // set the SMTP port for the GMAIL server
-$mail->Username   = "username"; // SMTP account username example
-$mail->Password   = "password";        // SMTP account password example
+// $mail->Host       = "mail.traveltokish.ir"; // SMTP server example
+// $mail->SMTPDebug  = 0;                     // enables SMTP debug information (for testing)
+// $mail->SMTPAuth   = true;                  // enable SMTP authentication
+// $mail->Port       = 587;                    // set the SMTP port for the GMAIL server
+// $mail->Username   = "username"; // SMTP account username example
+// $mail->Password   = "password";        // SMTP account password example

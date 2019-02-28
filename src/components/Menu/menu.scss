@@ -1,0 +1,18 @@
+@import '../../assets/css/vars/vars';
+
+.menu {
+
+  ul {
+    display: flex;
+
+    &>li {
+      cursor: pointer;
+      font-family: sans-serif;
+      font-size: 18px;
+    }
+
+    &>li:last-of-type {
+      margin: 0;
+    }
+  }
+}

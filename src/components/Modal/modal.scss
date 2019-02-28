@@ -1,0 +1,58 @@
+@import '../../assets/css/vars/vars';
+
+.modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(23, 35, 44, 0.4);
+  }
+
+  .main {
+    display: flex;
+    word-wrap: break-word;
+    border-radius: 10px;
+    flex-direction: column;
+    background: #fefefe;
+    width: 500px;
+    height: 250px;
+    box-shadow: 0 0 10px 1px #bbb;
+  }
+
+  .header {
+    padding: 25px;
+    box-sizing: border-box;
+    height: 25%;
+
+    span {
+      font-weight: 600;
+      color: #666;
+    }
+  }
+
+  .body {
+    padding: 15px;
+    box-sizing: border-box;
+    height: 75%;
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    // align-items: center;
+
+    p {
+      line-height: 35px;
+    }
+
+    .btn {
+      width: 100% !important;
+    }
+  }
+
+}
