@@ -7,7 +7,13 @@
           <div :class="$style.heroText">
             <span>your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> To </span></span>
             <!-- <span style="float:right;" :class="$style.orangered"></span><br/> -->
-            <app-button :class="$style.btnStart">Kish Island</app-button>
+            <app-button :id="$style.modalBtn" :class="$style.btnStart" @click.native="openModal">Kish Island</app-button>
+            <div :id="$style.simpleModal" :class="$style.modal">
+              <div :class="$style.modalContent">
+                  <span :id="$style.closeBtn" @click.native="closeModal">&times;</span>
+                  <p>Hello...I am a Modal</p>
+              </div>
+            </div>
           </div>
           <div :class="$style.mainImage">
             <img :src="image" alt="">
@@ -149,6 +155,16 @@ export default {
       .catch(function (error) {
         console.log(error);
       });
+    },
+    // Function to open modal
+    openModal() {
+      modal.style.display = 'block';
+      console.log("open");
+    },
+
+    // Function to close modal
+    closeModal() {
+        modal.style.display = 'none';
     }
   }
 }
