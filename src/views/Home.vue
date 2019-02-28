@@ -32,11 +32,17 @@
             regions of the Persian Gulf and has attracted the attention of many tribes and nations since times
             immemorial.
             Oval in shape, the island is 15 km long and 8 km wide.
+            Kish is largely flat, sandy and uncultivated, with a high point of 45 meters above sea level.
+            Although very hot and humid in summer, it has got a pleasant weather from about November to March, with an
+            annual average temperature of 27 degrees centigrade.
+            Its beautiful coast is covered with white silvery sand washed by azure blue waves of the sea. Already a
+            famous island, Kish owes it present flourishing to its status as Irans first and, for a long time, the only
+            free port, and its sweet water.
+
           </p>
         </div>
       </div>
       <div :class="$style.kishMap">
-        <span><img src="../assets/image/location-icon.png" alt=""></span>
         <div :class="$style.kishMapMain">
           <div :class="$style.kishMapInfo">
             <p>
@@ -49,23 +55,23 @@
             </p>
           </div>
           <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96327.89987818028!2d53.90945930833464!3d26.54581455704053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e50a9147e298609%3A0x625dad11bc3932e2!2sKish+Island!5e0!3m2!1sen!2s!4v1540906756481"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28556.038849785895!2d53.95687559999998!3d26.536044599999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e50a9147e298609%3A0x625dad11bc3932e2!2sKish+Island!5e0!3m2!1sen!2s!4v1551012368398"
               width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- <div :class="$style.draggableBoxes">
-      
-    </div> -->
     <!-- <div :class="$style.boxContainer">
       <app-box v-for="(city, index) in cities" :city="city" :key="index"></app-box>
     </div> -->
 
     <!-- CONTACT FORM: START -->
+
     <div :class="$style.contactForm">
-      <div :class="$style.title">Contact US</div>
+      <div :class="$style.title">
+        <h2>Contact US</h2>
+      </div>
       <div :class="$style.contactUsInner">
         <app-custom-input name="name" placeHolder="Full Name ..." @input="changeName($event)" :class="$style.name"
           v-model="contactData.name"></app-custom-input>
@@ -81,7 +87,9 @@
         <app-button @click.native="submit" color="regular" :class="$style.confBtn">Send</app-button>
       </div>
     </div>
+
     <!-- CONTACT FORM: END -->
+
     <app-footer></app-footer>
     <app-modal v-if="openModal" @close="openModal = false"></app-modal>
   </div>
@@ -95,7 +103,6 @@
   import Button from '@/components/Button/Button.vue';
   import CustomInput from '@/components/CustomInput/CustomInput.vue';
   import Modal from '@/components/Modal/Modal.vue';
-
 
   export default {
     name: 'Home',
@@ -141,13 +148,12 @@
       submit() {
         axios.post('./contact_handler.php', this.contactData)
           .then(function (response) {
-            console.log('hamid');
             this.openModal = true
           })
           .catch(function (error) {
             console.log(error);
           });
-      }
+      },
     }
   }
 

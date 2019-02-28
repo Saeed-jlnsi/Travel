@@ -12,9 +12,6 @@
       <div :class="$style.mobileNavIcon" v-on:click.prevent="isMenuOpened = !isMenuOpened">
         <img src="../../assets/image/phone-nav.svg" alt="">
       </div>
-      <div :class="$style.mobileNav" v-if="isMenuOpened">
-        <Menu :menu="menu"></Menu>
-      </div>
     </div>
   </div>
 </template>
