@@ -53,7 +53,6 @@ html {
                         }
                     }
                     .modal {
-                        display: none;
                         position: fixed;
                         top: 0;
                         left: 0;
@@ -66,11 +65,11 @@ html {
                         .modalContent {
                             background: #f4f4f4;
                             padding: 20px;
-                            width: 70%;
+                            width: 50%;
                             margin: 20% auto;
                             box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2),0 7px 20px rgba(0, 0, 0, 0.17);
                             animation-name: openModal;
-                            animation-duration: 1s;
+                            animation-duration: .5s;
                             #closeBtn {
                                 float: right;
                                 font-size: 30px;
@@ -80,6 +79,10 @@ html {
                                 color: #000;
                                 text-decoration: none;
                                 cursor: pointer;
+                            }
+                            @keyframes openModal {
+                                from {opacity: 0;}
+                                to {opacity: 1;}
                             }
                         }
                     }

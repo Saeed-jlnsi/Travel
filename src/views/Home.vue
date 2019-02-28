@@ -7,11 +7,43 @@
           <div :class="$style.heroText">
             <span>your <span :class="$style.orangered">Travel <br></span>map <span :class="$style.orangered"> To </span></span>
             <!-- <span style="float:right;" :class="$style.orangered"></span><br/> -->
-            <app-button :id="$style.modalBtn" :class="$style.btnStart" @click.native="openModal">Kish Island</app-button>
-            <div :id="$style.simpleModal" :class="$style.modal">
+            <app-button :id="$style.modalBtn" :class="$style.btnStart" @click.native="isModalVisible=!isModalVisible">Kish Island</app-button>
+            <div :id="$style.simpleModal" :class="$style.modal" v-if="isModalVisible">
               <div :class="$style.modalContent">
-                  <span :id="$style.closeBtn" @click.native="closeModal">&times;</span>
-                  <p>Hello...I am a Modal</p>
+                  <span :id="$style.closeBtn" @click="isModalVisible=!isModalVisible">&times;</span>
+                  <div :class="$style.contactForm">
+                    <div :class="$style.title"><h2>Contact US</h2></div>
+                    <div :class="$style.contactUsInner">
+                            <app-custom-input 
+                                name="name"
+                                placeHolder="name ..."
+                                @input="changeName($event)"
+                                :class="$style.name"
+                                v-model="contactData.name"
+                            ></app-custom-input>
+                            <app-custom-input 
+                                name="email"
+                                placeHolder="email ..."
+                                @input="changeEmail($event)"
+                                :class="$style.email"
+                                v-model="contactData.email"
+                                v-validate="'required|email'"
+
+                            ></app-custom-input>
+                            <span :class="$style.validationMessage" v-show="errors.has('email')">{{ errors.first('email') }}</span>
+                            <app-custom-input 
+                                name="phone"
+                                placeHolder="phone ..."
+                                @input="changePhone($event)"
+                                :class="$style.phone"
+                                v-model="contactData.phone"
+                            ></app-custom-input>
+                            <div :class="$style.textareaLabel">Message Content</div>
+                            <textarea v-model="contactData.comment" :class="$style.textArea" name="body" id="" cols="30" rows="8">
+                            </textarea>
+                        <app-button @click.native="submit" color="regular" :class="$style.confBtn">Send</app-button>
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
@@ -122,7 +154,8 @@ export default {
         {cityName: 'Montreal', imageLink:'greek-ship'},
         {cityName: 'Berlin', imageLink:'persian-gulf-beauties'},
         {cityName: 'San Francisco', imageLink:'entertainment'},
-      ]
+      ],
+      isModalVisible: false
     }
   },
   components: {
@@ -155,16 +188,6 @@ export default {
       .catch(function (error) {
         console.log(error);
       });
-    },
-    // Function to open modal
-    openModal() {
-      modal.style.display = 'block';
-      console.log("open");
-    },
-
-    // Function to close modal
-    closeModal() {
-        modal.style.display = 'none';
     }
   }
 }
