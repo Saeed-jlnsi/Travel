@@ -10,7 +10,8 @@ html {
             font-size: 200%;
         }
         h2 {
-            font-size: 180%;
+            // font-size: 180%;
+            font-size: 46px;
             font-weight: 600;
         }
         .container {
@@ -66,7 +67,7 @@ html {
                             background: #f4f4f4;
                             padding: 20px;
                             width: 50%;
-                            margin: 20% auto;
+                            margin: 10% auto;
                             box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2),0 7px 20px rgba(0, 0, 0, 0.17);
                             animation-name: openModal;
                             animation-duration: .5s;
@@ -223,7 +224,7 @@ html {
                 .contact-us-inner {
                     margin-bottom: 100px;
                     max-width: 600px;
-                    width:60%;
+                    width:100%;
 
                     .validation-message {
                         width: 100%;
@@ -243,7 +244,7 @@ html {
                     }
                     .textarea-label {
                         margin-bottom: 12px;
-            
+                        font-size: 20px;
                         color:grey;
                     }
                     textarea {
