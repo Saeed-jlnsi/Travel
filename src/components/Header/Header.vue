@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.header">
+  <header :class="$style.header">
     <div>
       <div :class="$style.logo">
         <img :src="imageLink" alt="travel to kish">
@@ -16,7 +16,7 @@
           <Menu :menu="menu"></Menu>
         </div>
       </div> -->
-  </div>
+  </header>
 </template>
 
 <script>
