@@ -6,7 +6,7 @@
       </div>
     </div>
     <div :class="$style.navBar">
-      <!-- <Menu :menu="menu"></Menu> -->
+      <Menu :menu="menu"></Menu>
     </div>
     <!-- <div :class="$style.sidebar">
         <div :class="$style.mobileNavIcon" v-on:click.prevent="isMenuOpened = !isMenuOpened">
